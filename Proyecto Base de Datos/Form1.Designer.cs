@@ -37,7 +37,6 @@
             this.ibChildForm = new FontAwesome.Sharp.IconButton();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panelDesktop = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.panelMenu.SuspendLayout();
             this.panelTop.SuspendLayout();
@@ -168,22 +167,12 @@
             // panelDesktop
             // 
             this.panelDesktop.Controls.Add(this.flowLayoutPanel2);
-            this.panelDesktop.Controls.Add(this.label2);
             this.panelDesktop.Controls.Add(this.flowLayoutPanel1);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(220, 80);
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Size = new System.Drawing.Size(962, 543);
             this.panelDesktop.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(128, 89);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 16);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "label2";
             // 
             // flowLayoutPanel2
             // 
@@ -207,7 +196,6 @@
             this.panelMenu.PerformLayout();
             this.panelTop.ResumeLayout(false);
             this.panelDesktop.ResumeLayout(false);
-            this.panelDesktop.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -223,7 +211,6 @@
         private System.Windows.Forms.Panel panelDesktop;
         private FontAwesome.Sharp.IconButton ibChildForm;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
     }
 }
