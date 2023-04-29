@@ -35,7 +35,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panelTop = new System.Windows.Forms.Panel();
             this.ibChildForm = new FontAwesome.Sharp.IconButton();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panelDesktop = new System.Windows.Forms.Panel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.panelMenu.SuspendLayout();
@@ -156,18 +155,9 @@
             this.ibChildForm.Text = "Home";
             this.ibChildForm.UseVisualStyleBackColor = false;
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(486, 66);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(178, 80);
-            this.flowLayoutPanel1.TabIndex = 3;
-            // 
             // panelDesktop
             // 
             this.panelDesktop.Controls.Add(this.flowLayoutPanel2);
-            this.panelDesktop.Controls.Add(this.flowLayoutPanel1);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(220, 80);
             this.panelDesktop.Name = "panelDesktop";
@@ -210,7 +200,6 @@
         private System.Windows.Forms.Panel panelTop;
         private System.Windows.Forms.Panel panelDesktop;
         private FontAwesome.Sharp.IconButton ibChildForm;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
     }
 }
