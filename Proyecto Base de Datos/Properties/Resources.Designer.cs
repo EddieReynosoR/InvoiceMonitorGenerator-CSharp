@@ -173,6 +173,26 @@ namespace Proyecto_Base_de_Datos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_círculo_rellenado_16__3_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-círculo-rellenado-16 (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_círculo_rellenado_16__3_1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-círculo-rellenado-16 (3)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_círculo_rellenado_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-círculo-rellenado-50", resourceCulture);

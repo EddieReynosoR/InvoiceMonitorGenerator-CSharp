@@ -11,7 +11,7 @@ using System.Runtime.InteropServices;
 
 namespace Proyecto_Base_de_Datos
 {
-    public partial class Form2 : Form
+    public partial class frmInicioSesion : Form
     {
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
 
@@ -25,7 +25,7 @@ namespace Proyecto_Base_de_Datos
             int nHeightEllipse // width of ellipse
         );
 
-        public Form2()
+        public frmInicioSesion()
         {
             InitializeComponent();
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
@@ -40,10 +40,21 @@ namespace Proyecto_Base_de_Datos
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
+            frmInicio form1 = new frmInicio();
             this.Hide();
             form1.Show();
 
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Normal) this.WindowState = FormWindowState.Maximized;
+            else this.WindowState = FormWindowState.Normal;
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

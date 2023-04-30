@@ -12,7 +12,7 @@ using System.Runtime.InteropServices;
 
 namespace Proyecto_Base_de_Datos
 {
-    public partial class Form1 : Form
+    public partial class frmInicio : Form
     {
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
        
@@ -26,7 +26,7 @@ namespace Proyecto_Base_de_Datos
             int nHeightEllipse // width of ellipse
         );
 
-        public Form1()
+        public frmInicio()
         {
             InitializeComponent();
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
@@ -35,15 +35,16 @@ namespace Proyecto_Base_de_Datos
            
         }
 
-
+        //Variables para las animaciones de la barra de menu
         bool sidebarExpand;
         bool homeCollapse;
-      
 
+        
         private void Form1_Load(object sender, EventArgs e)
         {   
         }
 
+        //Animacion de la barra de menu
         private void sidebarTimer_Tick(object sender, EventArgs e)
         {
             if(sidebarExpand)
@@ -71,6 +72,7 @@ namespace Proyecto_Base_de_Datos
             sidebarTimer.Start(); 
         }
 
+        //Animacion del submenu
         private void HomeTimer_Tick(object sender, EventArgs e)
         {
             if(homeCollapse)
@@ -110,7 +112,7 @@ namespace Proyecto_Base_de_Datos
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
+            frmInicioSesion form2 = new frmInicioSesion();
             this.Hide();
             form2.Show();
         }
@@ -118,6 +120,18 @@ namespace Proyecto_Base_de_Datos
         private void pictureBox5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            frmInicioSesion frmInicioSesion = new frmInicioSesion();
+            this.Hide();
+            frmInicioSesion.Show();
         }
     }
 }

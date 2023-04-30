@@ -121,8 +121,11 @@
   <data name="1682819156001" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1682819156001.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ce616dac-e228-4394-a203-81e8dc827068" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ce616dac-e228-4394-a203-81e8dc827068.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="1682833666241" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1682833666241.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-círculo-rellenado-16 (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-círculo-rellenado-16 (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cirroj" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cirroj.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,6 +148,9 @@
   <data name="icons8-círculo-rellenado-16 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-círculo-rellenado-16 (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ce616dac-e228-4394-a203-81e8dc827068" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ce616dac-e228-4394-a203-81e8dc827068.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8-círculo-rellenado-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-círculo-rellenado-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -160,7 +166,7 @@
   <data name="icons8-círculo-rellenado-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-círculo-rellenado-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1682833666241" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1682833666241.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-círculo-rellenado-16 (3)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-círculo-rellenado-16 (3)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
