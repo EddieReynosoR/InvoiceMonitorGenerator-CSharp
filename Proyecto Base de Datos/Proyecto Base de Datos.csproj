@@ -39,6 +39,9 @@
     <Reference Include="Guna.UI">
       <HintPath>..\..\..\..\Downloads\dlls proyecto bdd-20230429T200212Z-001\dlls proyecto bdd\Guna.UI.dll</HintPath>
     </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\..\Downloads\dlls proyecto bdd-20230429T200212Z-001\dlls proyecto bdd\Guna.UI2.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -157,6 +160,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ce616dac-e228-4394-a203-81e8dc827068.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1682819156001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1682833666241.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

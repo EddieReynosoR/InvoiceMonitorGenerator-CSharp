@@ -16,7 +16,7 @@ namespace Proyecto_Base_de_Datos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Form2());
         }
     }
 }

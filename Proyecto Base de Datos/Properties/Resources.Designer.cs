@@ -73,6 +73,26 @@ namespace Proyecto_Base_de_Datos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1682819156001 {
+            get {
+                object obj = ResourceManager.GetObject("1682819156001", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1682833666241 {
+            get {
+                object obj = ResourceManager.GetObject("1682833666241", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _3424e915_4aa6_4b2b_96cd_fbd9004bc9ed {
             get {
                 object obj = ResourceManager.GetObject("3424e915-4aa6-4b2b-96cd-fbd9004bc9ed", resourceCulture);

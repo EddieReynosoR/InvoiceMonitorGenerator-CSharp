@@ -44,3 +44,4 @@ C:\Users\kemba\OneDrive - tec tijuana\Github\Proyecto-De-Base-de-Datos\Proyecto 
 C:\Users\kemba\OneDrive - tec tijuana\Github\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto Base de Datos.pdb
 C:\Users\kemba\OneDrive - tec tijuana\Github\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\bin\Debug\Guna.UI.dll
 C:\Users\kemba\OneDrive - tec tijuana\Github\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto_Base_de_Datos.Form2.resources
+C:\Users\kemba\OneDrive - tec tijuana\Github\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\bin\Debug\Guna.UI2.dll

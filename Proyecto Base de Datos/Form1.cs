@@ -32,6 +32,7 @@ namespace Proyecto_Base_de_Datos
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             this.FormBorderStyle = FormBorderStyle.None;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+           
         }
 
 
@@ -100,6 +101,18 @@ namespace Proyecto_Base_de_Datos
         private void gunaLabel1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            this.Hide();
+            form2.Show();
         }
     }
 }
