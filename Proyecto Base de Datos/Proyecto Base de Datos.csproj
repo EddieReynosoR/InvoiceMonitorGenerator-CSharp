@@ -36,10 +36,15 @@
     <Reference Include="FontAwesome.Sharp">
       <HintPath>..\..\KemishMusic\bin\Debug\FontAwesome.Sharp.dll</HintPath>
     </Reference>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\..\Downloads\dlls proyecto bdd-20230429T200212Z-001\dlls proyecto bdd\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -59,6 +64,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Gestion de Recibos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +87,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Gestion de Recibos.resx">
       <DependentUpon>Gestion de Recibos.cs</DependentUpon>
     </EmbeddedResource>
@@ -90,6 +104,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -103,6 +118,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sidebarIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cirroj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\received_770820404723183.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-círculo-rellenado-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-círculo-rellenado-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-círculo-rellenado-16 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3424e915-4aa6-4b2b-96cd-fbd9004bc9ed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-círculo-rellenado-16 %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1313-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ce616dac-e228-4394-a203-81e8dc827068.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

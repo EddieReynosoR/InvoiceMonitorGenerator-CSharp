@@ -28,3 +28,19 @@ C:\Users\luisp\Documents\GitHub\Proyecto-Base-de-Datos1\Proyecto Base de Datos\o
 C:\Users\luisp\Documents\GitHub\Proyecto-Base-de-Datos1\Proyecto Base de Datos\obj\Debug\Proyecto Base de Datos.csproj.CopyComplete
 C:\Users\luisp\Documents\GitHub\Proyecto-Base-de-Datos1\Proyecto Base de Datos\obj\Debug\Proyecto Base de Datos.exe
 C:\Users\luisp\Documents\GitHub\Proyecto-Base-de-Datos1\Proyecto Base de Datos\obj\Debug\Proyecto Base de Datos.pdb
+C:\Users\kemba\OneDrive - tec tijuana\Github\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\bin\Debug\Proyecto Base de Datos.exe.config
+C:\Users\kemba\OneDrive - tec tijuana\Github\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\bin\Debug\Proyecto Base de Datos.exe
+C:\Users\kemba\OneDrive - tec tijuana\Github\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\bin\Debug\Proyecto Base de Datos.pdb
+C:\Users\kemba\OneDrive - tec tijuana\Github\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto Base de Datos.csproj.AssemblyReference.cache
+C:\Users\kemba\OneDrive - tec tijuana\Github\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto Base de Datos.csproj.SuggestedBindingRedirects.cache
+C:\Users\kemba\OneDrive - tec tijuana\Github\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto_Base_de_Datos.Form1.resources
+C:\Users\kemba\OneDrive - tec tijuana\Github\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto_Base_de_Datos.Formularios.Gestion_de_Recibos.resources
+C:\Users\kemba\OneDrive - tec tijuana\Github\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto_Base_de_Datos.Formularios.Home.resources
+C:\Users\kemba\OneDrive - tec tijuana\Github\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto_Base_de_Datos.Properties.Resources.resources
+C:\Users\kemba\OneDrive - tec tijuana\Github\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto Base de Datos.csproj.GenerateResource.cache
+C:\Users\kemba\OneDrive - tec tijuana\Github\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto Base de Datos.csproj.CoreCompileInputs.cache
+C:\Users\kemba\OneDrive - tec tijuana\Github\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto Base de Datos.csproj.CopyComplete
+C:\Users\kemba\OneDrive - tec tijuana\Github\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto Base de Datos.exe
+C:\Users\kemba\OneDrive - tec tijuana\Github\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto Base de Datos.pdb
+C:\Users\kemba\OneDrive - tec tijuana\Github\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\bin\Debug\Guna.UI.dll
+C:\Users\kemba\OneDrive - tec tijuana\Github\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto_Base_de_Datos.Form2.resources
