@@ -21,5 +21,15 @@ namespace Proyecto_Base_de_Datos
         {
 
         }
+
+        private void frmRegistroEmpleado_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
