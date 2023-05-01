@@ -78,9 +78,9 @@
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 0);
             this.sidebar.MaximumSize = new System.Drawing.Size(244, 590);
-            this.sidebar.MinimumSize = new System.Drawing.Size(63, 590);
+            this.sidebar.MinimumSize = new System.Drawing.Size(63, 630);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(244, 590);
+            this.sidebar.Size = new System.Drawing.Size(244, 630);
             this.sidebar.TabIndex = 0;
             // 
             // panel6
@@ -335,7 +335,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(244, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(862, 53);
+            this.panel5.Size = new System.Drawing.Size(904, 53);
             this.panel5.TabIndex = 5;
             // 
             // pictureBox2
@@ -343,7 +343,7 @@
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::Proyecto_Base_de_Datos.Properties.Resources.icons8_círculo_rellenado_16__2_1;
-            this.pictureBox2.Location = new System.Drawing.Point(799, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(841, 12);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(17, 29);
             this.pictureBox2.TabIndex = 10;
@@ -355,7 +355,7 @@
             this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = global::Proyecto_Base_de_Datos.Properties.Resources.icons8_círculo_rellenado_16__3_;
-            this.pictureBox3.Location = new System.Drawing.Point(832, 12);
+            this.pictureBox3.Location = new System.Drawing.Point(874, 12);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(17, 29);
             this.pictureBox3.TabIndex = 8;
@@ -371,14 +371,14 @@
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContenedor.Location = new System.Drawing.Point(244, 53);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(862, 537);
+            this.panelContenedor.Size = new System.Drawing.Size(904, 577);
             this.panelContenedor.TabIndex = 6;
             // 
             // frmInicio
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1106, 590);
+            this.ClientSize = new System.Drawing.Size(1148, 630);
             this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.sidebar);
