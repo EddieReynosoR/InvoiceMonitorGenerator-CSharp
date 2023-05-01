@@ -50,14 +50,6 @@
             this.gunaLabel8 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel9 = new Guna.UI.WinForms.GunaLabel();
             this.textBox8 = new System.Windows.Forms.TextBox();
-            this.gunaLabel10 = new Guna.UI.WinForms.GunaLabel();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.gunaLabel11 = new Guna.UI.WinForms.GunaLabel();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.gunaLabel12 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel13 = new Guna.UI.WinForms.GunaLabel();
-            this.textBox12 = new System.Windows.Forms.TextBox();
             this.gunaLabel14 = new Guna.UI.WinForms.GunaLabel();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.textBox14 = new System.Windows.Forms.TextBox();
@@ -66,16 +58,16 @@
             this.gunaLabel16 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel17 = new Guna.UI.WinForms.GunaLabel();
             this.textBox16 = new System.Windows.Forms.TextBox();
-            this.gunaLabel18 = new Guna.UI.WinForms.GunaLabel();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.gunaLabel19 = new Guna.UI.WinForms.GunaLabel();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.gunaLabel20 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel21 = new Guna.UI.WinForms.GunaLabel();
-            this.textBox20 = new System.Windows.Forms.TextBox();
             this.btnAtras = new FontAwesome.Sharp.IconButton();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.gunaLabel10 = new Guna.UI.WinForms.GunaLabel();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.gunaLabel13 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel12 = new Guna.UI.WinForms.GunaLabel();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.gunaLabel11 = new Guna.UI.WinForms.GunaLabel();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
             this.panel3.SuspendLayout();
             this.clasePaneles1.SuspendLayout();
             this.SuspendLayout();
@@ -136,14 +128,6 @@
             this.clasePaneles1.BorderColor = System.Drawing.Color.Navy;
             this.clasePaneles1.BorderRadius = 20;
             this.clasePaneles1.BorderSize = 1;
-            this.clasePaneles1.Controls.Add(this.gunaLabel18);
-            this.clasePaneles1.Controls.Add(this.textBox17);
-            this.clasePaneles1.Controls.Add(this.textBox18);
-            this.clasePaneles1.Controls.Add(this.gunaLabel19);
-            this.clasePaneles1.Controls.Add(this.textBox19);
-            this.clasePaneles1.Controls.Add(this.gunaLabel20);
-            this.clasePaneles1.Controls.Add(this.gunaLabel21);
-            this.clasePaneles1.Controls.Add(this.textBox20);
             this.clasePaneles1.Controls.Add(this.gunaLabel14);
             this.clasePaneles1.Controls.Add(this.textBox13);
             this.clasePaneles1.Controls.Add(this.textBox14);
@@ -273,7 +257,7 @@
             this.gunaLabel6.AutoSize = true;
             this.gunaLabel6.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaLabel6.ForeColor = System.Drawing.Color.Black;
-            this.gunaLabel6.Location = new System.Drawing.Point(734, 153);
+            this.gunaLabel6.Location = new System.Drawing.Point(734, 190);
             this.gunaLabel6.Name = "gunaLabel6";
             this.gunaLabel6.Size = new System.Drawing.Size(56, 20);
             this.gunaLabel6.TabIndex = 21;
@@ -283,7 +267,7 @@
             // 
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(663, 123);
+            this.textBox4.Location = new System.Drawing.Point(663, 160);
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(189, 27);
@@ -293,7 +277,7 @@
             // 
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(233, 123);
+            this.textBox5.Location = new System.Drawing.Point(233, 160);
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(189, 27);
@@ -304,7 +288,7 @@
             this.gunaLabel7.AutoSize = true;
             this.gunaLabel7.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaLabel7.ForeColor = System.Drawing.Color.Black;
-            this.gunaLabel7.Location = new System.Drawing.Point(519, 153);
+            this.gunaLabel7.Location = new System.Drawing.Point(519, 190);
             this.gunaLabel7.Name = "gunaLabel7";
             this.gunaLabel7.Size = new System.Drawing.Size(46, 20);
             this.gunaLabel7.TabIndex = 18;
@@ -314,7 +298,7 @@
             // 
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(448, 123);
+            this.textBox6.Location = new System.Drawing.Point(448, 160);
             this.textBox6.Name = "textBox6";
             this.textBox6.ReadOnly = true;
             this.textBox6.Size = new System.Drawing.Size(189, 27);
@@ -325,7 +309,7 @@
             this.gunaLabel8.AutoSize = true;
             this.gunaLabel8.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaLabel8.ForeColor = System.Drawing.Color.Black;
-            this.gunaLabel8.Location = new System.Drawing.Point(279, 153);
+            this.gunaLabel8.Location = new System.Drawing.Point(279, 190);
             this.gunaLabel8.Name = "gunaLabel8";
             this.gunaLabel8.Size = new System.Drawing.Size(92, 20);
             this.gunaLabel8.TabIndex = 16;
@@ -336,7 +320,7 @@
             this.gunaLabel9.AutoSize = true;
             this.gunaLabel9.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaLabel9.ForeColor = System.Drawing.Color.Black;
-            this.gunaLabel9.Location = new System.Drawing.Point(52, 153);
+            this.gunaLabel9.Location = new System.Drawing.Point(52, 190);
             this.gunaLabel9.Name = "gunaLabel9";
             this.gunaLabel9.Size = new System.Drawing.Size(127, 20);
             this.gunaLabel9.TabIndex = 15;
@@ -346,102 +330,18 @@
             // 
             this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(20, 123);
+            this.textBox8.Location = new System.Drawing.Point(20, 160);
             this.textBox8.Name = "textBox8";
             this.textBox8.ReadOnly = true;
             this.textBox8.Size = new System.Drawing.Size(189, 27);
             this.textBox8.TabIndex = 14;
-            // 
-            // gunaLabel10
-            // 
-            this.gunaLabel10.AutoSize = true;
-            this.gunaLabel10.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel10.ForeColor = System.Drawing.Color.Black;
-            this.gunaLabel10.Location = new System.Drawing.Point(734, 234);
-            this.gunaLabel10.Name = "gunaLabel10";
-            this.gunaLabel10.Size = new System.Drawing.Size(56, 20);
-            this.gunaLabel10.TabIndex = 29;
-            this.gunaLabel10.Text = "Motivo";
-            // 
-            // textBox9
-            // 
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(663, 204);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(189, 27);
-            this.textBox9.TabIndex = 28;
-            // 
-            // textBox10
-            // 
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(233, 204);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.ReadOnly = true;
-            this.textBox10.Size = new System.Drawing.Size(189, 27);
-            this.textBox10.TabIndex = 27;
-            // 
-            // gunaLabel11
-            // 
-            this.gunaLabel11.AutoSize = true;
-            this.gunaLabel11.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel11.ForeColor = System.Drawing.Color.Black;
-            this.gunaLabel11.Location = new System.Drawing.Point(519, 234);
-            this.gunaLabel11.Name = "gunaLabel11";
-            this.gunaLabel11.Size = new System.Drawing.Size(46, 20);
-            this.gunaLabel11.TabIndex = 26;
-            this.gunaLabel11.Text = "Autor";
-            // 
-            // textBox11
-            // 
-            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(448, 204);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.ReadOnly = true;
-            this.textBox11.Size = new System.Drawing.Size(189, 27);
-            this.textBox11.TabIndex = 25;
-            // 
-            // gunaLabel12
-            // 
-            this.gunaLabel12.AutoSize = true;
-            this.gunaLabel12.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel12.ForeColor = System.Drawing.Color.Black;
-            this.gunaLabel12.Location = new System.Drawing.Point(279, 234);
-            this.gunaLabel12.Name = "gunaLabel12";
-            this.gunaLabel12.Size = new System.Drawing.Size(92, 20);
-            this.gunaLabel12.TabIndex = 24;
-            this.gunaLabel12.Text = "Fecha y hora";
-            // 
-            // gunaLabel13
-            // 
-            this.gunaLabel13.AutoSize = true;
-            this.gunaLabel13.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel13.ForeColor = System.Drawing.Color.Black;
-            this.gunaLabel13.Location = new System.Drawing.Point(52, 234);
-            this.gunaLabel13.Name = "gunaLabel13";
-            this.gunaLabel13.Size = new System.Drawing.Size(127, 20);
-            this.gunaLabel13.TabIndex = 23;
-            this.gunaLabel13.Text = "Cambio realizado";
-            // 
-            // textBox12
-            // 
-            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox12.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(20, 204);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.ReadOnly = true;
-            this.textBox12.Size = new System.Drawing.Size(189, 27);
-            this.textBox12.TabIndex = 22;
             // 
             // gunaLabel14
             // 
             this.gunaLabel14.AutoSize = true;
             this.gunaLabel14.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaLabel14.ForeColor = System.Drawing.Color.Black;
-            this.gunaLabel14.Location = new System.Drawing.Point(734, 322);
+            this.gunaLabel14.Location = new System.Drawing.Point(734, 405);
             this.gunaLabel14.Name = "gunaLabel14";
             this.gunaLabel14.Size = new System.Drawing.Size(56, 20);
             this.gunaLabel14.TabIndex = 37;
@@ -451,7 +351,7 @@
             // 
             this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(663, 292);
+            this.textBox13.Location = new System.Drawing.Point(663, 375);
             this.textBox13.Name = "textBox13";
             this.textBox13.ReadOnly = true;
             this.textBox13.Size = new System.Drawing.Size(189, 27);
@@ -461,7 +361,7 @@
             // 
             this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox14.Location = new System.Drawing.Point(233, 292);
+            this.textBox14.Location = new System.Drawing.Point(233, 375);
             this.textBox14.Name = "textBox14";
             this.textBox14.ReadOnly = true;
             this.textBox14.Size = new System.Drawing.Size(189, 27);
@@ -472,7 +372,7 @@
             this.gunaLabel15.AutoSize = true;
             this.gunaLabel15.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaLabel15.ForeColor = System.Drawing.Color.Black;
-            this.gunaLabel15.Location = new System.Drawing.Point(519, 322);
+            this.gunaLabel15.Location = new System.Drawing.Point(519, 405);
             this.gunaLabel15.Name = "gunaLabel15";
             this.gunaLabel15.Size = new System.Drawing.Size(46, 20);
             this.gunaLabel15.TabIndex = 34;
@@ -482,7 +382,7 @@
             // 
             this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox15.Location = new System.Drawing.Point(448, 292);
+            this.textBox15.Location = new System.Drawing.Point(448, 375);
             this.textBox15.Name = "textBox15";
             this.textBox15.ReadOnly = true;
             this.textBox15.Size = new System.Drawing.Size(189, 27);
@@ -493,7 +393,7 @@
             this.gunaLabel16.AutoSize = true;
             this.gunaLabel16.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaLabel16.ForeColor = System.Drawing.Color.Black;
-            this.gunaLabel16.Location = new System.Drawing.Point(279, 322);
+            this.gunaLabel16.Location = new System.Drawing.Point(279, 405);
             this.gunaLabel16.Name = "gunaLabel16";
             this.gunaLabel16.Size = new System.Drawing.Size(92, 20);
             this.gunaLabel16.TabIndex = 32;
@@ -504,7 +404,7 @@
             this.gunaLabel17.AutoSize = true;
             this.gunaLabel17.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaLabel17.ForeColor = System.Drawing.Color.Black;
-            this.gunaLabel17.Location = new System.Drawing.Point(52, 322);
+            this.gunaLabel17.Location = new System.Drawing.Point(52, 405);
             this.gunaLabel17.Name = "gunaLabel17";
             this.gunaLabel17.Size = new System.Drawing.Size(127, 20);
             this.gunaLabel17.TabIndex = 31;
@@ -514,95 +414,11 @@
             // 
             this.textBox16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox16.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox16.Location = new System.Drawing.Point(20, 292);
+            this.textBox16.Location = new System.Drawing.Point(20, 375);
             this.textBox16.Name = "textBox16";
             this.textBox16.ReadOnly = true;
             this.textBox16.Size = new System.Drawing.Size(189, 27);
             this.textBox16.TabIndex = 30;
-            // 
-            // gunaLabel18
-            // 
-            this.gunaLabel18.AutoSize = true;
-            this.gunaLabel18.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel18.ForeColor = System.Drawing.Color.Black;
-            this.gunaLabel18.Location = new System.Drawing.Point(734, 415);
-            this.gunaLabel18.Name = "gunaLabel18";
-            this.gunaLabel18.Size = new System.Drawing.Size(56, 20);
-            this.gunaLabel18.TabIndex = 45;
-            this.gunaLabel18.Text = "Motivo";
-            // 
-            // textBox17
-            // 
-            this.textBox17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox17.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox17.Location = new System.Drawing.Point(663, 385);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.ReadOnly = true;
-            this.textBox17.Size = new System.Drawing.Size(189, 27);
-            this.textBox17.TabIndex = 44;
-            // 
-            // textBox18
-            // 
-            this.textBox18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox18.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox18.Location = new System.Drawing.Point(233, 385);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.ReadOnly = true;
-            this.textBox18.Size = new System.Drawing.Size(189, 27);
-            this.textBox18.TabIndex = 43;
-            // 
-            // gunaLabel19
-            // 
-            this.gunaLabel19.AutoSize = true;
-            this.gunaLabel19.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel19.ForeColor = System.Drawing.Color.Black;
-            this.gunaLabel19.Location = new System.Drawing.Point(519, 415);
-            this.gunaLabel19.Name = "gunaLabel19";
-            this.gunaLabel19.Size = new System.Drawing.Size(46, 20);
-            this.gunaLabel19.TabIndex = 42;
-            this.gunaLabel19.Text = "Autor";
-            // 
-            // textBox19
-            // 
-            this.textBox19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox19.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox19.Location = new System.Drawing.Point(448, 385);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.ReadOnly = true;
-            this.textBox19.Size = new System.Drawing.Size(189, 27);
-            this.textBox19.TabIndex = 41;
-            // 
-            // gunaLabel20
-            // 
-            this.gunaLabel20.AutoSize = true;
-            this.gunaLabel20.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel20.ForeColor = System.Drawing.Color.Black;
-            this.gunaLabel20.Location = new System.Drawing.Point(279, 415);
-            this.gunaLabel20.Name = "gunaLabel20";
-            this.gunaLabel20.Size = new System.Drawing.Size(92, 20);
-            this.gunaLabel20.TabIndex = 40;
-            this.gunaLabel20.Text = "Fecha y hora";
-            // 
-            // gunaLabel21
-            // 
-            this.gunaLabel21.AutoSize = true;
-            this.gunaLabel21.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel21.ForeColor = System.Drawing.Color.Black;
-            this.gunaLabel21.Location = new System.Drawing.Point(52, 415);
-            this.gunaLabel21.Name = "gunaLabel21";
-            this.gunaLabel21.Size = new System.Drawing.Size(127, 20);
-            this.gunaLabel21.TabIndex = 39;
-            this.gunaLabel21.Text = "Cambio realizado";
-            // 
-            // textBox20
-            // 
-            this.textBox20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox20.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox20.Location = new System.Drawing.Point(20, 385);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.ReadOnly = true;
-            this.textBox20.Size = new System.Drawing.Size(189, 27);
-            this.textBox20.TabIndex = 38;
             // 
             // btnAtras
             // 
@@ -623,6 +439,90 @@
             // guna2DragControl1
             // 
             this.guna2DragControl1.TargetControl = this;
+            // 
+            // gunaLabel10
+            // 
+            this.gunaLabel10.AutoSize = true;
+            this.gunaLabel10.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLabel10.ForeColor = System.Drawing.Color.Black;
+            this.gunaLabel10.Location = new System.Drawing.Point(734, 303);
+            this.gunaLabel10.Name = "gunaLabel10";
+            this.gunaLabel10.Size = new System.Drawing.Size(56, 20);
+            this.gunaLabel10.TabIndex = 29;
+            this.gunaLabel10.Text = "Motivo";
+            // 
+            // textBox9
+            // 
+            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox9.Location = new System.Drawing.Point(663, 273);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.ReadOnly = true;
+            this.textBox9.Size = new System.Drawing.Size(189, 27);
+            this.textBox9.TabIndex = 28;
+            // 
+            // gunaLabel13
+            // 
+            this.gunaLabel13.AutoSize = true;
+            this.gunaLabel13.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLabel13.ForeColor = System.Drawing.Color.Black;
+            this.gunaLabel13.Location = new System.Drawing.Point(52, 303);
+            this.gunaLabel13.Name = "gunaLabel13";
+            this.gunaLabel13.Size = new System.Drawing.Size(127, 20);
+            this.gunaLabel13.TabIndex = 23;
+            this.gunaLabel13.Text = "Cambio realizado";
+            // 
+            // gunaLabel12
+            // 
+            this.gunaLabel12.AutoSize = true;
+            this.gunaLabel12.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLabel12.ForeColor = System.Drawing.Color.Black;
+            this.gunaLabel12.Location = new System.Drawing.Point(279, 303);
+            this.gunaLabel12.Name = "gunaLabel12";
+            this.gunaLabel12.Size = new System.Drawing.Size(92, 20);
+            this.gunaLabel12.TabIndex = 24;
+            this.gunaLabel12.Text = "Fecha y hora";
+            // 
+            // textBox11
+            // 
+            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox11.Location = new System.Drawing.Point(448, 273);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.ReadOnly = true;
+            this.textBox11.Size = new System.Drawing.Size(189, 27);
+            this.textBox11.TabIndex = 25;
+            // 
+            // gunaLabel11
+            // 
+            this.gunaLabel11.AutoSize = true;
+            this.gunaLabel11.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLabel11.ForeColor = System.Drawing.Color.Black;
+            this.gunaLabel11.Location = new System.Drawing.Point(519, 303);
+            this.gunaLabel11.Name = "gunaLabel11";
+            this.gunaLabel11.Size = new System.Drawing.Size(46, 20);
+            this.gunaLabel11.TabIndex = 26;
+            this.gunaLabel11.Text = "Autor";
+            // 
+            // textBox10
+            // 
+            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox10.Location = new System.Drawing.Point(233, 273);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.ReadOnly = true;
+            this.textBox10.Size = new System.Drawing.Size(189, 27);
+            this.textBox10.TabIndex = 27;
+            // 
+            // textBox12
+            // 
+            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox12.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox12.Location = new System.Drawing.Point(20, 273);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.ReadOnly = true;
+            this.textBox12.Size = new System.Drawing.Size(189, 27);
+            this.textBox12.TabIndex = 22;
             // 
             // frmHistorialdeCambios
             // 
@@ -653,14 +553,6 @@
         private System.Windows.Forms.TextBox textBox7;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private clasePaneles clasePaneles1;
-        private Guna.UI.WinForms.GunaLabel gunaLabel18;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
-        private Guna.UI.WinForms.GunaLabel gunaLabel19;
-        private System.Windows.Forms.TextBox textBox19;
-        private Guna.UI.WinForms.GunaLabel gunaLabel20;
-        private Guna.UI.WinForms.GunaLabel gunaLabel21;
-        private System.Windows.Forms.TextBox textBox20;
         private Guna.UI.WinForms.GunaLabel gunaLabel14;
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.TextBox textBox14;
@@ -669,14 +561,6 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel16;
         private Guna.UI.WinForms.GunaLabel gunaLabel17;
         private System.Windows.Forms.TextBox textBox16;
-        private Guna.UI.WinForms.GunaLabel gunaLabel10;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private Guna.UI.WinForms.GunaLabel gunaLabel11;
-        private System.Windows.Forms.TextBox textBox11;
-        private Guna.UI.WinForms.GunaLabel gunaLabel12;
-        private Guna.UI.WinForms.GunaLabel gunaLabel13;
-        private System.Windows.Forms.TextBox textBox12;
         private Guna.UI.WinForms.GunaLabel gunaLabel6;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
@@ -695,5 +579,13 @@
         private System.Windows.Forms.TextBox txtNombre;
         private FontAwesome.Sharp.IconButton btnAtras;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
+        private Guna.UI.WinForms.GunaLabel gunaLabel10;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox textBox10;
+        private Guna.UI.WinForms.GunaLabel gunaLabel11;
+        private System.Windows.Forms.TextBox textBox11;
+        private Guna.UI.WinForms.GunaLabel gunaLabel12;
+        private Guna.UI.WinForms.GunaLabel gunaLabel13;
+        private System.Windows.Forms.TextBox textBox12;
     }
 }
