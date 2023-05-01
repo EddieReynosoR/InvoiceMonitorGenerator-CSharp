@@ -203,6 +203,16 @@ namespace Proyecto_Base_de_Datos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Logo {
+            get {
+                object obj = ResourceManager.GetObject("Logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap menu {
             get {
                 object obj = ResourceManager.GetObject("menu", resourceCulture);
@@ -216,6 +226,26 @@ namespace Proyecto_Base_de_Datos.Properties {
         internal static System.Drawing.Bitmap received_770820404723183 {
             get {
                 object obj = ResourceManager.GetObject("received_770820404723183", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ReGISTEC_COMPANY {
+            get {
+                object obj = ResourceManager.GetObject("ReGISTEC COMPANY", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ReGISTEC_COMPANY__1_ {
+            get {
+                object obj = ResourceManager.GetObject("ReGISTEC COMPANY (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

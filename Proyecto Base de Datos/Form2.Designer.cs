@@ -243,7 +243,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Proyecto_Base_de_Datos.Properties.Resources._1682833666241;
+            this.pictureBox1.Image = global::Proyecto_Base_de_Datos.Properties.Resources.Logo;
             this.pictureBox1.Location = new System.Drawing.Point(126, 50);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(83, 117);

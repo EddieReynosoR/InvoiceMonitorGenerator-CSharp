@@ -37,6 +37,7 @@
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.clasePaneles1 = new Proyecto_Base_de_Datos.clasePaneles();
+            this.cbxRango = new System.Windows.Forms.ComboBox();
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
@@ -46,7 +47,6 @@
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.cbxRango = new System.Windows.Forms.ComboBox();
             this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
             this.clasePaneles2 = new Proyecto_Base_de_Datos.clasePaneles();
             this.gunaLabel11 = new Guna.UI.WinForms.GunaLabel();
@@ -136,7 +136,7 @@
             this.iconButton1.IconColor = System.Drawing.Color.MediumSlateBlue;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(717, 481);
+            this.iconButton1.Location = new System.Drawing.Point(669, 443);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(175, 49);
             this.iconButton1.TabIndex = 27;
@@ -177,6 +177,19 @@
             this.clasePaneles1.Size = new System.Drawing.Size(880, 184);
             this.clasePaneles1.TabIndex = 23;
             this.clasePaneles1.TextColor = System.Drawing.Color.White;
+            // 
+            // cbxRango
+            // 
+            this.cbxRango.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxRango.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.cbxRango.FormattingEnabled = true;
+            this.cbxRango.Items.AddRange(new object[] {
+            "1",
+            "2"});
+            this.cbxRango.Location = new System.Drawing.Point(330, 34);
+            this.cbxRango.Name = "cbxRango";
+            this.cbxRango.Size = new System.Drawing.Size(189, 28);
+            this.cbxRango.TabIndex = 17;
             // 
             // gunaLabel6
             // 
@@ -268,19 +281,6 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(189, 27);
             this.txtNombre.TabIndex = 0;
-            // 
-            // cbxRango
-            // 
-            this.cbxRango.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxRango.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.cbxRango.FormattingEnabled = true;
-            this.cbxRango.Items.AddRange(new object[] {
-            "1",
-            "2"});
-            this.cbxRango.Location = new System.Drawing.Point(330, 34);
-            this.cbxRango.Name = "cbxRango";
-            this.cbxRango.Size = new System.Drawing.Size(189, 28);
-            this.cbxRango.TabIndex = 17;
             // 
             // gunaLabel7
             // 

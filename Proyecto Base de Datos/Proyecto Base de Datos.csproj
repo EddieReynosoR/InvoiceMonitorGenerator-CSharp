@@ -239,5 +239,14 @@
   <ItemGroup>
     <None Include="Resources\icons8-círculo-rellenado-16 %283%291.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReGISTEC COMPANY.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReGISTEC COMPANY %281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
