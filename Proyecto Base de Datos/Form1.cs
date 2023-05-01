@@ -31,7 +31,6 @@ namespace Proyecto_Base_de_Datos
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
-           
         }
 
         //Variables para las animaciones de la barra de menu
@@ -40,7 +39,8 @@ namespace Proyecto_Base_de_Datos
 
         
         private void Form1_Load(object sender, EventArgs e)
-        {   
+        {
+            buttonHome_Click(null, e);
         }
 
         //Animacion de la barra de menu
@@ -172,5 +172,7 @@ namespace Proyecto_Base_de_Datos
         {
             HomeTimer.Start();
         }
+
+       
     }
 }

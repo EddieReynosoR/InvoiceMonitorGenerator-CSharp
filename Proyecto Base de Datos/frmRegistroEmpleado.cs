@@ -16,5 +16,10 @@ namespace Proyecto_Base_de_Datos
         {
             InitializeComponent();
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

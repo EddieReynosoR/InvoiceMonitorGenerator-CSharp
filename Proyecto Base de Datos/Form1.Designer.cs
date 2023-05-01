@@ -87,6 +87,7 @@
             // 
             this.panel6.Controls.Add(this.label2);
             this.panel6.Controls.Add(this.btnAtras);
+            this.panel6.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel6.Location = new System.Drawing.Point(3, 3);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(241, 50);
@@ -95,11 +96,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(67, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 25);
+            this.label2.Size = new System.Drawing.Size(84, 28);
             this.label2.TabIndex = 0;
             this.label2.Text = "Registec";
             // 
@@ -107,6 +108,7 @@
             // 
             this.gunaPanel1.Controls.Add(this.label1);
             this.gunaPanel1.Controls.Add(this.menuButton);
+            this.gunaPanel1.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaPanel1.ForeColor = System.Drawing.Color.White;
             this.gunaPanel1.Location = new System.Drawing.Point(3, 59);
             this.gunaPanel1.Name = "gunaPanel1";
@@ -126,6 +128,7 @@
             this.HomeContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
             this.HomeContainer.Controls.Add(this.panel4);
             this.HomeContainer.Controls.Add(this.panel1);
+            this.HomeContainer.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HomeContainer.Location = new System.Drawing.Point(3, 126);
             this.HomeContainer.MaximumSize = new System.Drawing.Size(241, 117);
             this.HomeContainer.MinimumSize = new System.Drawing.Size(241, 53);
@@ -154,6 +157,7 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.btnGestiondeRecibo);
+            this.panel2.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.Location = new System.Drawing.Point(3, 194);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(268, 59);
@@ -162,6 +166,7 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.btnAñadirRecibo);
+            this.panel3.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel3.Location = new System.Drawing.Point(3, 259);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(268, 59);
@@ -230,8 +235,9 @@
             this.btnAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAtras.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
             this.btnAtras.IconChar = FontAwesome.Sharp.IconChar.ArrowAltCircleLeft;
-            this.btnAtras.IconColor = System.Drawing.Color.White;
+            this.btnAtras.IconColor = System.Drawing.Color.Thistle;
             this.btnAtras.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnAtras.IconSize = 40;
             this.btnAtras.Location = new System.Drawing.Point(-3, 3);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(58, 42);
@@ -245,9 +251,10 @@
             this.menuButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.menuButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
             this.menuButton.IconChar = FontAwesome.Sharp.IconChar.AlignJustify;
-            this.menuButton.IconColor = System.Drawing.Color.White;
+            this.menuButton.IconColor = System.Drawing.Color.Thistle;
             this.menuButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.menuButton.Location = new System.Drawing.Point(-3, 3);
+            this.menuButton.IconSize = 40;
+            this.menuButton.Location = new System.Drawing.Point(-9, 3);
             this.menuButton.Name = "menuButton";
             this.menuButton.Size = new System.Drawing.Size(64, 52);
             this.menuButton.TabIndex = 0;
@@ -260,8 +267,9 @@
             this.btnSubmenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSubmenu.ForeColor = System.Drawing.Color.White;
             this.btnSubmenu.IconChar = FontAwesome.Sharp.IconChar.HomeLg;
-            this.btnSubmenu.IconColor = System.Drawing.Color.White;
+            this.btnSubmenu.IconColor = System.Drawing.Color.Thistle;
             this.btnSubmenu.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSubmenu.IconSize = 40;
             this.btnSubmenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSubmenu.Location = new System.Drawing.Point(-3, -18);
             this.btnSubmenu.Name = "btnSubmenu";
@@ -279,8 +287,9 @@
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHome.ForeColor = System.Drawing.Color.White;
             this.btnHome.IconChar = FontAwesome.Sharp.IconChar.HomeUser;
-            this.btnHome.IconColor = System.Drawing.Color.White;
+            this.btnHome.IconColor = System.Drawing.Color.Thistle;
             this.btnHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnHome.IconSize = 40;
             this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHome.Location = new System.Drawing.Point(-3, -18);
             this.btnHome.Name = "btnHome";
@@ -298,8 +307,9 @@
             this.btnGestiondeRecibo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGestiondeRecibo.ForeColor = System.Drawing.Color.White;
             this.btnGestiondeRecibo.IconChar = FontAwesome.Sharp.IconChar.FileCircleCheck;
-            this.btnGestiondeRecibo.IconColor = System.Drawing.Color.White;
+            this.btnGestiondeRecibo.IconColor = System.Drawing.Color.Thistle;
             this.btnGestiondeRecibo.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnGestiondeRecibo.IconSize = 40;
             this.btnGestiondeRecibo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGestiondeRecibo.Location = new System.Drawing.Point(-3, -17);
             this.btnGestiondeRecibo.Name = "btnGestiondeRecibo";
@@ -317,8 +327,9 @@
             this.btnAñadirRecibo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAñadirRecibo.ForeColor = System.Drawing.Color.White;
             this.btnAñadirRecibo.IconChar = FontAwesome.Sharp.IconChar.FileCirclePlus;
-            this.btnAñadirRecibo.IconColor = System.Drawing.Color.White;
+            this.btnAñadirRecibo.IconColor = System.Drawing.Color.Thistle;
             this.btnAñadirRecibo.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnAñadirRecibo.IconSize = 40;
             this.btnAñadirRecibo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAñadirRecibo.Location = new System.Drawing.Point(-3, -15);
             this.btnAñadirRecibo.Name = "btnAñadirRecibo";
@@ -336,7 +347,7 @@
             this.btnActivarSubmenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnActivarSubmenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
             this.btnActivarSubmenu.IconChar = FontAwesome.Sharp.IconChar.ArrowDown;
-            this.btnActivarSubmenu.IconColor = System.Drawing.Color.White;
+            this.btnActivarSubmenu.IconColor = System.Drawing.Color.Thistle;
             this.btnActivarSubmenu.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnActivarSubmenu.IconSize = 20;
             this.btnActivarSubmenu.Location = new System.Drawing.Point(191, 9);
@@ -353,7 +364,7 @@
             this.btnDesactivarSubmenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDesactivarSubmenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
             this.btnDesactivarSubmenu.IconChar = FontAwesome.Sharp.IconChar.ArrowUp;
-            this.btnDesactivarSubmenu.IconColor = System.Drawing.Color.White;
+            this.btnDesactivarSubmenu.IconColor = System.Drawing.Color.Thistle;
             this.btnDesactivarSubmenu.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnDesactivarSubmenu.IconSize = 20;
             this.btnDesactivarSubmenu.Location = new System.Drawing.Point(191, 0);

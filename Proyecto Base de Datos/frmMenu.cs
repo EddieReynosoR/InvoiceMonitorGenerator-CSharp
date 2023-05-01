@@ -16,5 +16,10 @@ namespace Proyecto_Base_de_Datos
         {
             InitializeComponent();
         }
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

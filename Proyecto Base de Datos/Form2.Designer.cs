@@ -36,20 +36,22 @@
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.panel7 = new System.Windows.Forms.Panel();
+            this.panelMover = new System.Windows.Forms.Panel();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.gunaPanel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel7.SuspendLayout();
+            this.panelMover.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // gunaLabel1
@@ -66,10 +68,11 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkColor = System.Drawing.Color.White;
             this.linkLabel1.Location = new System.Drawing.Point(131, 533);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(77, 16);
+            this.linkLabel1.Size = new System.Drawing.Size(74, 17);
             this.linkLabel1.TabIndex = 9;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Registrarse";
@@ -78,13 +81,13 @@
             // gunaPanel2
             // 
             this.gunaPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(59)))));
+            this.gunaPanel2.Controls.Add(this.panel1);
             this.gunaPanel2.Controls.Add(this.panel4);
             this.gunaPanel2.Controls.Add(this.panel3);
-            this.gunaPanel2.Controls.Add(this.panel7);
+            this.gunaPanel2.Controls.Add(this.panelMover);
             this.gunaPanel2.Controls.Add(this.gunaLabel4);
             this.gunaPanel2.Controls.Add(this.pictureBox1);
             this.gunaPanel2.Controls.Add(this.linkLabel1);
-            this.gunaPanel2.Controls.Add(this.iconButton1);
             this.gunaPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gunaPanel2.Location = new System.Drawing.Point(0, 0);
             this.gunaPanel2.Name = "gunaPanel2";
@@ -94,6 +97,7 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.guna2TextBox2);
+            this.panel4.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel4.Location = new System.Drawing.Point(17, 336);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(290, 34);
@@ -130,6 +134,7 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.guna2TextBox1);
+            this.panel3.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel3.Location = new System.Drawing.Point(17, 241);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(290, 34);
@@ -163,32 +168,32 @@
             this.guna2TextBox1.Size = new System.Drawing.Size(300, 42);
             this.guna2TextBox1.TabIndex = 13;
             // 
-            // panel7
+            // panelMover
             // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.panel7.Controls.Add(this.pictureBox4);
-            this.panel7.Controls.Add(this.pictureBox3);
-            this.panel7.Controls.Add(this.gunaLabel1);
-            this.panel7.Location = new System.Drawing.Point(0, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(368, 44);
-            this.panel7.TabIndex = 12;
-            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
+            this.panelMover.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.panelMover.Controls.Add(this.pictureBox4);
+            this.panelMover.Controls.Add(this.pictureBox3);
+            this.panelMover.Controls.Add(this.gunaLabel1);
+            this.panelMover.Location = new System.Drawing.Point(0, 0);
+            this.panelMover.Name = "panelMover";
+            this.panelMover.Size = new System.Drawing.Size(368, 44);
+            this.panelMover.TabIndex = 12;
+            this.panelMover.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
             // gunaLabel4
             // 
             this.gunaLabel4.AutoSize = true;
-            this.gunaLabel4.Font = new System.Drawing.Font("Consolas", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel4.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel4.Location = new System.Drawing.Point(13, 175);
+            this.gunaLabel4.Location = new System.Drawing.Point(34, 170);
             this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(340, 22);
+            this.gunaLabel4.Size = new System.Drawing.Size(298, 25);
             this.gunaLabel4.TabIndex = 11;
             this.gunaLabel4.Text = "Sistema administrativo de recibos";
             // 
             // guna2DragControl1
             // 
-            this.guna2DragControl1.TargetControl = this.gunaPanel2;
+            this.guna2DragControl1.TargetControl = this.panelMover;
             // 
             // pictureBox4
             // 
@@ -227,19 +232,28 @@
             // iconButton1
             // 
             this.iconButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton1.ForeColor = System.Drawing.Color.White;
             this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.SignIn;
-            this.iconButton1.IconColor = System.Drawing.Color.White;
+            this.iconButton1.IconColor = System.Drawing.Color.Thistle;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(72, 467);
+            this.iconButton1.Location = new System.Drawing.Point(-6, -6);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(197, 39);
+            this.iconButton1.Size = new System.Drawing.Size(197, 55);
             this.iconButton1.TabIndex = 7;
             this.iconButton1.Text = "Iniciar sesion";
             this.iconButton1.UseVisualStyleBackColor = true;
             this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.iconButton1);
+            this.panel1.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel1.Location = new System.Drawing.Point(87, 450);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(185, 41);
+            this.panel1.TabIndex = 16;
             // 
             // frmInicioSesion
             // 
@@ -256,11 +270,12 @@
             this.gunaPanel2.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
+            this.panelMover.ResumeLayout(false);
+            this.panelMover.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -277,9 +292,10 @@
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private System.Windows.Forms.Panel panel3;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panelMover;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
+        private System.Windows.Forms.Panel panel1;
     }
 }
