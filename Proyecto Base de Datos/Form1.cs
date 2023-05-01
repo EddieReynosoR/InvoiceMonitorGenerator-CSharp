@@ -66,7 +66,7 @@ namespace Proyecto_Base_de_Datos
                 currentBtn.ForeColor = Color.FromArgb(255, 236, 239);
                 currentBtn.TextAlign = ContentAlignment.MiddleLeft;
                 currentBtn.IconColor = Color.FromArgb(255, 236, 239);
-                currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
+               // currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
                 currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
             }
         }
@@ -154,9 +154,9 @@ namespace Proyecto_Base_de_Datos
         }
         private void buttonHome_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color1);
+            // ActivateButton(sender, RGBColors.color1);
+            DisableButton();
             AbrirFormHija(new frmMenu());
-            
         }
 
         private void gunaLabel1_Click(object sender, EventArgs e)
