@@ -42,7 +42,6 @@
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.gunaLabel21 = new Guna.UI.WinForms.GunaLabel();
             this.textBox18 = new System.Windows.Forms.TextBox();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.clasePaneles1 = new Proyecto_Base_de_Datos.clasePaneles();
             this.cbxRango = new System.Windows.Forms.ComboBox();
@@ -57,6 +56,8 @@
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.gunaLabel8 = new Guna.UI.WinForms.GunaLabel();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.clasePaneles2.SuspendLayout();
             this.clasePaneles3.SuspendLayout();
             this.clasePaneles1.SuspendLayout();
@@ -227,21 +228,6 @@
             this.textBox18.Size = new System.Drawing.Size(189, 27);
             this.textBox18.TabIndex = 0;
             // 
-            // iconButton1
-            // 
-            this.iconButton1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.iconButton1.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
-            this.iconButton1.IconColor = System.Drawing.Color.MediumSlateBlue;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 30;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(616, 428);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(224, 49);
-            this.iconButton1.TabIndex = 34;
-            this.iconButton1.UseVisualStyleBackColor = false;
-            // 
             // gunaLabel1
             // 
             this.gunaLabel1.AutoSize = true;
@@ -388,7 +374,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(658, 439);
+            this.textBox1.Location = new System.Drawing.Point(658, 416);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(167, 22);
             this.textBox1.TabIndex = 39;
@@ -398,17 +384,50 @@
             this.gunaLabel8.AutoSize = true;
             this.gunaLabel8.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaLabel8.ForeColor = System.Drawing.Color.Black;
-            this.gunaLabel8.Location = new System.Drawing.Point(680, 480);
+            this.gunaLabel8.Location = new System.Drawing.Point(680, 457);
             this.gunaLabel8.Name = "gunaLabel8";
             this.gunaLabel8.Size = new System.Drawing.Size(98, 20);
             this.gunaLabel8.TabIndex = 11;
             this.gunaLabel8.Text = "Buscar recibo";
+            // 
+            // iconButton2
+            // 
+            this.iconButton2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.iconButton2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.FileImport;
+            this.iconButton2.IconColor = System.Drawing.Color.MediumSlateBlue;
+            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton2.IconSize = 30;
+            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton2.Location = new System.Drawing.Point(616, 490);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.Size = new System.Drawing.Size(224, 49);
+            this.iconButton2.TabIndex = 41;
+            this.iconButton2.Text = "Historial de cambios";
+            this.iconButton2.UseVisualStyleBackColor = false;
+            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.iconButton1.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            this.iconButton1.IconColor = System.Drawing.Color.MediumSlateBlue;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 30;
+            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton1.Location = new System.Drawing.Point(616, 405);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(224, 49);
+            this.iconButton1.TabIndex = 34;
+            this.iconButton1.UseVisualStyleBackColor = false;
             // 
             // frmGestiondeRecibos
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(904, 577);
+            this.Controls.Add(this.iconButton2);
             this.Controls.Add(this.gunaLabel8);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.gunaLabel7);
@@ -420,7 +439,9 @@
             this.Controls.Add(this.clasePaneles1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmGestiondeRecibos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmGestiondeRecibos";
+            this.Load += new System.EventHandler(this.frmGestiondeRecibos_Load);
             this.clasePaneles2.ResumeLayout(false);
             this.clasePaneles2.PerformLayout();
             this.clasePaneles3.ResumeLayout(false);
@@ -463,5 +484,6 @@
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox textBox1;
         private Guna.UI.WinForms.GunaLabel gunaLabel8;
+        private FontAwesome.Sharp.IconButton iconButton2;
     }
 }

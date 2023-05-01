@@ -16,5 +16,16 @@ namespace Proyecto_Base_de_Datos
         {
             InitializeComponent();
         }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            frmHistorialdeCambios frmHistorialdeCambios = new frmHistorialdeCambios();  
+            frmHistorialdeCambios.Show();
+        }
+
+        private void frmGestiondeRecibos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
