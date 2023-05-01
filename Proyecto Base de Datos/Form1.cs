@@ -77,6 +77,7 @@ namespace Proyecto_Base_de_Datos
         {
             if(homeCollapse)
             {
+                btnActivarSubmenu.Hide();
                 HomeContainer.Height += 10;
                 if(HomeContainer.Height==HomeContainer.MaximumSize.Height)
                 {
@@ -86,6 +87,7 @@ namespace Proyecto_Base_de_Datos
             }
             else
             {
+                btnActivarSubmenu.Show();
                 HomeContainer.Height -= 10;
                 if (HomeContainer.Height == HomeContainer.MinimumSize.Height)
                 {
@@ -97,7 +99,7 @@ namespace Proyecto_Base_de_Datos
 
         private void buttonHome_Click(object sender, EventArgs e)
         {
-            HomeTimer.Start();
+            AbrirFormHija(new frmMenu());
         }
 
         private void gunaLabel1_Click(object sender, EventArgs e)
@@ -132,6 +134,44 @@ namespace Proyecto_Base_de_Datos
             frmInicioSesion frmInicioSesion = new frmInicioSesion();
             this.Hide();
             frmInicioSesion.Show();
+        }
+
+        private void AbrirFormHija(object formHija)
+        {
+            if (this.panelContenedor.Controls.Count > 0)
+                this.panelContenedor.Controls.RemoveAt(0);
+            Form fh = formHija as Form;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            this.panelContenedor.Controls.Add(fh);
+            this.panelContenedor.Tag = fh;
+            fh.Show();
+        }
+
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new frmGestiondeRecibos());
+        }
+
+        private void iconButton4_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new frmAgregarRecibo());
+        }
+
+        private void btnSubmenu_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new frmSubmenu());
+        }
+
+        private void btnActivarSubmenu_Click(object sender, EventArgs e)
+        {
+            HomeTimer.Start();
+
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            HomeTimer.Start();
         }
     }
 }

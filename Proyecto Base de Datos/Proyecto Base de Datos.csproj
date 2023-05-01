@@ -85,6 +85,48 @@
     <Compile Include="Formularios\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAgregarRecibo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregarRecibo.Designer.cs">
+      <DependentUpon>frmAgregarRecibo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGestiondeRecibos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGestiondeRecibos.Designer.cs">
+      <DependentUpon>frmGestiondeRecibos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistro.Designer.cs">
+      <DependentUpon>frmRegistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistroEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistroEmpleado.Designer.cs">
+      <DependentUpon>frmRegistroEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistroUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistroUsuario.Designer.cs">
+      <DependentUpon>frmRegistroUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSubmenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSubmenu.Designer.cs">
+      <DependentUpon>frmSubmenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -98,6 +140,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarRecibo.resx">
+      <DependentUpon>frmAgregarRecibo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGestiondeRecibos.resx">
+      <DependentUpon>frmGestiondeRecibos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistro.resx">
+      <DependentUpon>frmRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistroEmpleado.resx">
+      <DependentUpon>frmRegistroEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistroUsuario.resx">
+      <DependentUpon>frmRegistroUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSubmenu.resx">
+      <DependentUpon>frmSubmenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

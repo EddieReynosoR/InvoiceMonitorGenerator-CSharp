@@ -45,3 +45,10 @@ C:\Users\kemba\OneDrive - tec tijuana\Github\Proyecto-De-Base-de-Datos\Proyecto 
 C:\Users\kemba\OneDrive - tec tijuana\Github\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\bin\Debug\Guna.UI2.dll
 C:\Users\kemba\OneDrive - tec tijuana\Github\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto_Base_de_Datos.frmInicio.resources
 C:\Users\kemba\OneDrive - tec tijuana\Github\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto_Base_de_Datos.frmInicioSesion.resources
+C:\Users\kemba\OneDrive - tec tijuana\Github\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto_Base_de_Datos.frmRegistro.resources
+C:\Users\kemba\OneDrive - tec tijuana\Github\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto_Base_de_Datos.frmRegistroUsuario.resources
+C:\Users\kemba\OneDrive - tec tijuana\Github\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto_Base_de_Datos.frmRegistroEmpleado.resources
+C:\Users\kemba\OneDrive - tec tijuana\Github\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto_Base_de_Datos.frmAgregarRecibo.resources
+C:\Users\kemba\OneDrive - tec tijuana\Github\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto_Base_de_Datos.frmGestiondeRecibos.resources
+C:\Users\kemba\OneDrive - tec tijuana\Github\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto_Base_de_Datos.frmMenu.resources
+C:\Users\kemba\OneDrive - tec tijuana\Github\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto_Base_de_Datos.frmSubmenu.resources

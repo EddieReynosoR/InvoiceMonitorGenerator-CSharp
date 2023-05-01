@@ -43,14 +43,17 @@
             this.HomeTimer = new System.Windows.Forms.Timer(this.components);
             this.panel5 = new System.Windows.Forms.Panel();
             this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.panelContenedor = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btnAtras = new FontAwesome.Sharp.IconButton();
             this.menuButton = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.buttonHome = new FontAwesome.Sharp.IconButton();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.btnSubmenu = new FontAwesome.Sharp.IconButton();
+            this.btnHome = new FontAwesome.Sharp.IconButton();
+            this.btnGestiondeRecibo = new FontAwesome.Sharp.IconButton();
+            this.btnAñadirRecibo = new FontAwesome.Sharp.IconButton();
+            this.btnActivarSubmenu = new FontAwesome.Sharp.IconButton();
+            this.btnDesactivarSubmenu = new FontAwesome.Sharp.IconButton();
             this.sidebar.SuspendLayout();
             this.panel6.SuspendLayout();
             this.gunaPanel1.SuspendLayout();
@@ -83,7 +86,7 @@
             // panel6
             // 
             this.panel6.Controls.Add(this.label2);
-            this.panel6.Controls.Add(this.iconButton2);
+            this.panel6.Controls.Add(this.btnAtras);
             this.panel6.Location = new System.Drawing.Point(3, 3);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(241, 50);
@@ -116,7 +119,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 16);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Menu";
+            this.label1.Text = "Barra";
             // 
             // HomeContainer
             // 
@@ -127,12 +130,13 @@
             this.HomeContainer.MaximumSize = new System.Drawing.Size(241, 117);
             this.HomeContainer.MinimumSize = new System.Drawing.Size(241, 53);
             this.HomeContainer.Name = "HomeContainer";
-            this.HomeContainer.Size = new System.Drawing.Size(241, 53);
+            this.HomeContainer.Size = new System.Drawing.Size(241, 62);
             this.HomeContainer.TabIndex = 4;
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.iconButton1);
+            this.panel4.Controls.Add(this.btnDesactivarSubmenu);
+            this.panel4.Controls.Add(this.btnSubmenu);
             this.panel4.Location = new System.Drawing.Point(0, 68);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(241, 59);
@@ -140,7 +144,8 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.buttonHome);
+            this.panel1.Controls.Add(this.btnActivarSubmenu);
+            this.panel1.Controls.Add(this.btnHome);
             this.panel1.Location = new System.Drawing.Point(0, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(241, 59);
@@ -148,16 +153,16 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.iconButton3);
-            this.panel2.Location = new System.Drawing.Point(3, 185);
+            this.panel2.Controls.Add(this.btnGestiondeRecibo);
+            this.panel2.Location = new System.Drawing.Point(3, 194);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(268, 59);
             this.panel2.TabIndex = 2;
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.iconButton4);
-            this.panel3.Location = new System.Drawing.Point(3, 250);
+            this.panel3.Controls.Add(this.btnAñadirRecibo);
+            this.panel3.Location = new System.Drawing.Point(3, 259);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(268, 59);
             this.panel3.TabIndex = 3;
@@ -187,6 +192,14 @@
             // 
             this.guna2DragControl2.TargetControl = this.panel5;
             // 
+            // panelContenedor
+            // 
+            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContenedor.Location = new System.Drawing.Point(244, 53);
+            this.panelContenedor.Name = "panelContenedor";
+            this.panelContenedor.Size = new System.Drawing.Size(862, 537);
+            this.panelContenedor.TabIndex = 6;
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -211,6 +224,21 @@
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
+            // btnAtras
+            // 
+            this.btnAtras.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAtras.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.btnAtras.IconChar = FontAwesome.Sharp.IconChar.ArrowAltCircleLeft;
+            this.btnAtras.IconColor = System.Drawing.Color.White;
+            this.btnAtras.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnAtras.Location = new System.Drawing.Point(-3, 3);
+            this.btnAtras.Name = "btnAtras";
+            this.btnAtras.Size = new System.Drawing.Size(58, 42);
+            this.btnAtras.TabIndex = 2;
+            this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.Click += new System.EventHandler(this.iconButton2_Click);
+            // 
             // menuButton
             // 
             this.menuButton.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -226,96 +254,121 @@
             this.menuButton.UseVisualStyleBackColor = true;
             this.menuButton.Click += new System.EventHandler(this.menuButton_Click);
             // 
-            // iconButton1
+            // btnSubmenu
             // 
-            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.ForeColor = System.Drawing.Color.White;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.HomeLg;
-            this.iconButton1.IconColor = System.Drawing.Color.White;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(-3, -18);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(255, 85);
-            this.iconButton1.TabIndex = 1;
-            this.iconButton1.Text = "                 Submenu";
-            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.UseVisualStyleBackColor = false;
+            this.btnSubmenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.btnSubmenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSubmenu.ForeColor = System.Drawing.Color.White;
+            this.btnSubmenu.IconChar = FontAwesome.Sharp.IconChar.HomeLg;
+            this.btnSubmenu.IconColor = System.Drawing.Color.White;
+            this.btnSubmenu.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSubmenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSubmenu.Location = new System.Drawing.Point(-3, -18);
+            this.btnSubmenu.Name = "btnSubmenu";
+            this.btnSubmenu.Size = new System.Drawing.Size(255, 85);
+            this.btnSubmenu.TabIndex = 1;
+            this.btnSubmenu.Text = "                 Submenu";
+            this.btnSubmenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSubmenu.UseVisualStyleBackColor = false;
+            this.btnSubmenu.Click += new System.EventHandler(this.btnSubmenu_Click);
             // 
-            // buttonHome
+            // btnHome
             // 
-            this.buttonHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.buttonHome.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonHome.ForeColor = System.Drawing.Color.White;
-            this.buttonHome.IconChar = FontAwesome.Sharp.IconChar.HomeUser;
-            this.buttonHome.IconColor = System.Drawing.Color.White;
-            this.buttonHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.buttonHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonHome.Location = new System.Drawing.Point(-3, -18);
-            this.buttonHome.Name = "buttonHome";
-            this.buttonHome.Size = new System.Drawing.Size(255, 85);
-            this.buttonHome.TabIndex = 1;
-            this.buttonHome.Text = "                 Home\r\n";
-            this.buttonHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonHome.UseVisualStyleBackColor = false;
-            this.buttonHome.Click += new System.EventHandler(this.buttonHome_Click);
+            this.btnHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHome.ForeColor = System.Drawing.Color.White;
+            this.btnHome.IconChar = FontAwesome.Sharp.IconChar.HomeUser;
+            this.btnHome.IconColor = System.Drawing.Color.White;
+            this.btnHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHome.Location = new System.Drawing.Point(-3, -18);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(255, 85);
+            this.btnHome.TabIndex = 1;
+            this.btnHome.Text = "                 Menu\r\n";
+            this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHome.UseVisualStyleBackColor = false;
+            this.btnHome.Click += new System.EventHandler(this.buttonHome_Click);
             // 
-            // iconButton3
+            // btnGestiondeRecibo
             // 
-            this.iconButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.ForeColor = System.Drawing.Color.White;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.FileCircleCheck;
-            this.iconButton3.IconColor = System.Drawing.Color.White;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.Location = new System.Drawing.Point(-3, -17);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(255, 85);
-            this.iconButton3.TabIndex = 1;
-            this.iconButton3.Text = "                 Gestion de recibos";
-            this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.UseVisualStyleBackColor = false;
+            this.btnGestiondeRecibo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.btnGestiondeRecibo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGestiondeRecibo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGestiondeRecibo.ForeColor = System.Drawing.Color.White;
+            this.btnGestiondeRecibo.IconChar = FontAwesome.Sharp.IconChar.FileCircleCheck;
+            this.btnGestiondeRecibo.IconColor = System.Drawing.Color.White;
+            this.btnGestiondeRecibo.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnGestiondeRecibo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGestiondeRecibo.Location = new System.Drawing.Point(-3, -17);
+            this.btnGestiondeRecibo.Name = "btnGestiondeRecibo";
+            this.btnGestiondeRecibo.Size = new System.Drawing.Size(255, 85);
+            this.btnGestiondeRecibo.TabIndex = 1;
+            this.btnGestiondeRecibo.Text = "                 Gestion de recibos";
+            this.btnGestiondeRecibo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGestiondeRecibo.UseVisualStyleBackColor = false;
+            this.btnGestiondeRecibo.Click += new System.EventHandler(this.iconButton3_Click);
             // 
-            // iconButton4
+            // btnAñadirRecibo
             // 
-            this.iconButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton4.ForeColor = System.Drawing.Color.White;
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.FileCirclePlus;
-            this.iconButton4.IconColor = System.Drawing.Color.White;
-            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton4.Location = new System.Drawing.Point(-3, -15);
-            this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Size = new System.Drawing.Size(255, 85);
-            this.iconButton4.TabIndex = 1;
-            this.iconButton4.Text = "                 Añadir recibo\r\n";
-            this.iconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton4.UseVisualStyleBackColor = false;
+            this.btnAñadirRecibo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.btnAñadirRecibo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAñadirRecibo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAñadirRecibo.ForeColor = System.Drawing.Color.White;
+            this.btnAñadirRecibo.IconChar = FontAwesome.Sharp.IconChar.FileCirclePlus;
+            this.btnAñadirRecibo.IconColor = System.Drawing.Color.White;
+            this.btnAñadirRecibo.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnAñadirRecibo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAñadirRecibo.Location = new System.Drawing.Point(-3, -15);
+            this.btnAñadirRecibo.Name = "btnAñadirRecibo";
+            this.btnAñadirRecibo.Size = new System.Drawing.Size(255, 85);
+            this.btnAñadirRecibo.TabIndex = 1;
+            this.btnAñadirRecibo.Text = "                 Añadir recibo\r\n";
+            this.btnAñadirRecibo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAñadirRecibo.UseVisualStyleBackColor = false;
+            this.btnAñadirRecibo.Click += new System.EventHandler(this.iconButton4_Click);
             // 
-            // iconButton2
+            // btnActivarSubmenu
             // 
-            this.iconButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.ArrowAltCircleLeft;
-            this.iconButton2.IconColor = System.Drawing.Color.White;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.Location = new System.Drawing.Point(-3, 3);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(58, 42);
-            this.iconButton2.TabIndex = 2;
-            this.iconButton2.UseVisualStyleBackColor = true;
-            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
+            this.btnActivarSubmenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.btnActivarSubmenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnActivarSubmenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnActivarSubmenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.btnActivarSubmenu.IconChar = FontAwesome.Sharp.IconChar.ArrowDown;
+            this.btnActivarSubmenu.IconColor = System.Drawing.Color.White;
+            this.btnActivarSubmenu.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnActivarSubmenu.IconSize = 20;
+            this.btnActivarSubmenu.Location = new System.Drawing.Point(191, 9);
+            this.btnActivarSubmenu.Name = "btnActivarSubmenu";
+            this.btnActivarSubmenu.Size = new System.Drawing.Size(44, 41);
+            this.btnActivarSubmenu.TabIndex = 3;
+            this.btnActivarSubmenu.UseVisualStyleBackColor = false;
+            this.btnActivarSubmenu.Click += new System.EventHandler(this.btnActivarSubmenu_Click);
+            // 
+            // btnDesactivarSubmenu
+            // 
+            this.btnDesactivarSubmenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.btnDesactivarSubmenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDesactivarSubmenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDesactivarSubmenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.btnDesactivarSubmenu.IconChar = FontAwesome.Sharp.IconChar.ArrowUp;
+            this.btnDesactivarSubmenu.IconColor = System.Drawing.Color.White;
+            this.btnDesactivarSubmenu.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnDesactivarSubmenu.IconSize = 20;
+            this.btnDesactivarSubmenu.Location = new System.Drawing.Point(191, 0);
+            this.btnDesactivarSubmenu.Name = "btnDesactivarSubmenu";
+            this.btnDesactivarSubmenu.Size = new System.Drawing.Size(44, 41);
+            this.btnDesactivarSubmenu.TabIndex = 4;
+            this.btnDesactivarSubmenu.UseVisualStyleBackColor = false;
+            this.btnDesactivarSubmenu.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // frmInicio
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1106, 590);
+            this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.sidebar);
             this.Cursor = System.Windows.Forms.Cursors.Default;
@@ -344,17 +397,17 @@
         private System.Windows.Forms.FlowLayoutPanel sidebar;
         private Guna.UI.WinForms.GunaPanel gunaPanel1;
         private System.Windows.Forms.Panel panel1;
-        private FontAwesome.Sharp.IconButton buttonHome;
+        private FontAwesome.Sharp.IconButton btnHome;
         private System.Windows.Forms.Panel panel2;
-        private FontAwesome.Sharp.IconButton iconButton3;
+        private FontAwesome.Sharp.IconButton btnGestiondeRecibo;
         private System.Windows.Forms.Panel panel3;
-        private FontAwesome.Sharp.IconButton iconButton4;
+        private FontAwesome.Sharp.IconButton btnAñadirRecibo;
         private System.Windows.Forms.Timer sidebarTimer;
         private System.Windows.Forms.Label label1;
         private FontAwesome.Sharp.IconButton menuButton;
         private System.Windows.Forms.Panel HomeContainer;
         private System.Windows.Forms.Panel panel4;
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton btnSubmenu;
         private System.Windows.Forms.Timer HomeTimer;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel5;
@@ -362,7 +415,10 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl2;
-        private FontAwesome.Sharp.IconButton iconButton2;
+        private FontAwesome.Sharp.IconButton btnAtras;
+        private System.Windows.Forms.Panel panelContenedor;
+        private FontAwesome.Sharp.IconButton btnActivarSubmenu;
+        private FontAwesome.Sharp.IconButton btnDesactivarSubmenu;
     }
 }
 

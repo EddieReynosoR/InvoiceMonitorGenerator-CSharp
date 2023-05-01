@@ -56,5 +56,17 @@ namespace Proyecto_Base_de_Datos
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmRegistro frmRegistro = new frmRegistro();
+            this.Hide();
+            frmRegistro.Show();
+        }
     }
 }
