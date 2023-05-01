@@ -32,28 +32,28 @@
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnAtras = new FontAwesome.Sharp.IconButton();
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.label1 = new System.Windows.Forms.Label();
+            this.menuButton = new FontAwesome.Sharp.IconButton();
             this.HomeContainer = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btnDesactivarSubmenu = new FontAwesome.Sharp.IconButton();
+            this.btnSoporte = new FontAwesome.Sharp.IconButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnActivarSubmenu = new FontAwesome.Sharp.IconButton();
+            this.btnInicio = new FontAwesome.Sharp.IconButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnGestiondeRecibo = new FontAwesome.Sharp.IconButton();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnAñadirRecibo = new FontAwesome.Sharp.IconButton();
             this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
             this.HomeTimer = new System.Windows.Forms.Timer(this.components);
             this.panel5 = new System.Windows.Forms.Panel();
-            this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.panelContenedor = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.btnAtras = new FontAwesome.Sharp.IconButton();
-            this.menuButton = new FontAwesome.Sharp.IconButton();
-            this.btnDesactivarSubmenu = new FontAwesome.Sharp.IconButton();
-            this.btnSoporte = new FontAwesome.Sharp.IconButton();
-            this.btnActivarSubmenu = new FontAwesome.Sharp.IconButton();
-            this.btnInicio = new FontAwesome.Sharp.IconButton();
-            this.btnGestiondeRecibo = new FontAwesome.Sharp.IconButton();
-            this.btnAñadirRecibo = new FontAwesome.Sharp.IconButton();
+            this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.panelContenedor = new System.Windows.Forms.Panel();
             this.sidebar.SuspendLayout();
             this.panel6.SuspendLayout();
             this.gunaPanel1.SuspendLayout();
@@ -104,6 +104,22 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Registec";
             // 
+            // btnAtras
+            // 
+            this.btnAtras.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAtras.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.btnAtras.IconChar = FontAwesome.Sharp.IconChar.ArrowAltCircleLeft;
+            this.btnAtras.IconColor = System.Drawing.Color.Thistle;
+            this.btnAtras.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnAtras.IconSize = 40;
+            this.btnAtras.Location = new System.Drawing.Point(-3, 3);
+            this.btnAtras.Name = "btnAtras";
+            this.btnAtras.Size = new System.Drawing.Size(58, 42);
+            this.btnAtras.TabIndex = 2;
+            this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.Click += new System.EventHandler(this.iconButton2_Click);
+            // 
             // gunaPanel1
             // 
             this.gunaPanel1.Controls.Add(this.label1);
@@ -114,6 +130,7 @@
             this.gunaPanel1.Name = "gunaPanel1";
             this.gunaPanel1.Size = new System.Drawing.Size(241, 61);
             this.gunaPanel1.TabIndex = 0;
+            this.gunaPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.gunaPanel1_Paint);
             // 
             // label1
             // 
@@ -122,6 +139,22 @@
             this.label1.Size = new System.Drawing.Size(55, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "Barra";
+            // 
+            // menuButton
+            // 
+            this.menuButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.menuButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.menuButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.menuButton.IconChar = FontAwesome.Sharp.IconChar.AlignJustify;
+            this.menuButton.IconColor = System.Drawing.Color.Thistle;
+            this.menuButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.menuButton.IconSize = 40;
+            this.menuButton.Location = new System.Drawing.Point(-9, 3);
+            this.menuButton.Name = "menuButton";
+            this.menuButton.Size = new System.Drawing.Size(64, 52);
+            this.menuButton.TabIndex = 0;
+            this.menuButton.UseVisualStyleBackColor = true;
+            this.menuButton.Click += new System.EventHandler(this.menuButton_Click);
             // 
             // HomeContainer
             // 
@@ -144,122 +177,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(241, 59);
             this.panel4.TabIndex = 2;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.btnActivarSubmenu);
-            this.panel1.Controls.Add(this.btnInicio);
-            this.panel1.Location = new System.Drawing.Point(0, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(241, 59);
-            this.panel1.TabIndex = 1;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.btnGestiondeRecibo);
-            this.panel2.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel2.Location = new System.Drawing.Point(3, 194);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(268, 59);
-            this.panel2.TabIndex = 2;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.btnAñadirRecibo);
-            this.panel3.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel3.Location = new System.Drawing.Point(3, 259);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(268, 59);
-            this.panel3.TabIndex = 3;
-            // 
-            // sidebarTimer
-            // 
-            this.sidebarTimer.Interval = 10;
-            this.sidebarTimer.Tick += new System.EventHandler(this.sidebarTimer_Tick);
-            // 
-            // HomeTimer
-            // 
-            this.HomeTimer.Interval = 10;
-            this.HomeTimer.Tick += new System.EventHandler(this.HomeTimer_Tick);
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.panel5.Controls.Add(this.pictureBox2);
-            this.panel5.Controls.Add(this.pictureBox3);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(244, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(904, 53);
-            this.panel5.TabIndex = 5;
-            // 
-            // guna2DragControl2
-            // 
-            this.guna2DragControl2.TargetControl = this.panel5;
-            // 
-            // panelContenedor
-            // 
-            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenedor.Location = new System.Drawing.Point(244, 53);
-            this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(904, 577);
-            this.panelContenedor.TabIndex = 6;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = global::Proyecto_Base_de_Datos.Properties.Resources.icons8_círculo_rellenado_16__2_1;
-            this.pictureBox2.Location = new System.Drawing.Point(841, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(17, 29);
-            this.pictureBox2.TabIndex = 10;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Image = global::Proyecto_Base_de_Datos.Properties.Resources.icons8_círculo_rellenado_16__3_;
-            this.pictureBox3.Location = new System.Drawing.Point(874, 12);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(17, 29);
-            this.pictureBox3.TabIndex = 8;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
-            // btnAtras
-            // 
-            this.btnAtras.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAtras.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.btnAtras.IconChar = FontAwesome.Sharp.IconChar.ArrowAltCircleLeft;
-            this.btnAtras.IconColor = System.Drawing.Color.Thistle;
-            this.btnAtras.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnAtras.IconSize = 40;
-            this.btnAtras.Location = new System.Drawing.Point(-3, 3);
-            this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(58, 42);
-            this.btnAtras.TabIndex = 2;
-            this.btnAtras.UseVisualStyleBackColor = true;
-            this.btnAtras.Click += new System.EventHandler(this.iconButton2_Click);
-            // 
-            // menuButton
-            // 
-            this.menuButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.menuButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.menuButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.menuButton.IconChar = FontAwesome.Sharp.IconChar.AlignJustify;
-            this.menuButton.IconColor = System.Drawing.Color.Thistle;
-            this.menuButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.menuButton.IconSize = 40;
-            this.menuButton.Location = new System.Drawing.Point(-9, 3);
-            this.menuButton.Name = "menuButton";
-            this.menuButton.Size = new System.Drawing.Size(64, 52);
-            this.menuButton.TabIndex = 0;
-            this.menuButton.UseVisualStyleBackColor = true;
-            this.menuButton.Click += new System.EventHandler(this.menuButton_Click);
             // 
             // btnDesactivarSubmenu
             // 
@@ -296,6 +213,15 @@
             this.btnSoporte.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSoporte.UseVisualStyleBackColor = false;
             this.btnSoporte.Click += new System.EventHandler(this.btnSubmenu_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btnActivarSubmenu);
+            this.panel1.Controls.Add(this.btnInicio);
+            this.panel1.Location = new System.Drawing.Point(0, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(241, 59);
+            this.panel1.TabIndex = 1;
             // 
             // btnActivarSubmenu
             // 
@@ -334,6 +260,15 @@
             this.btnInicio.UseVisualStyleBackColor = false;
             this.btnInicio.Click += new System.EventHandler(this.buttonHome_Click);
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.btnGestiondeRecibo);
+            this.panel2.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel2.Location = new System.Drawing.Point(3, 194);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(268, 59);
+            this.panel2.TabIndex = 2;
+            // 
             // btnGestiondeRecibo
             // 
             this.btnGestiondeRecibo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
@@ -354,6 +289,15 @@
             this.btnGestiondeRecibo.UseVisualStyleBackColor = false;
             this.btnGestiondeRecibo.Click += new System.EventHandler(this.iconButton3_Click);
             // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.btnAñadirRecibo);
+            this.panel3.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel3.Location = new System.Drawing.Point(3, 259);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(268, 59);
+            this.panel3.TabIndex = 3;
+            // 
             // btnAñadirRecibo
             // 
             this.btnAñadirRecibo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
@@ -373,6 +317,63 @@
             this.btnAñadirRecibo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAñadirRecibo.UseVisualStyleBackColor = false;
             this.btnAñadirRecibo.Click += new System.EventHandler(this.iconButton4_Click);
+            // 
+            // sidebarTimer
+            // 
+            this.sidebarTimer.Interval = 10;
+            this.sidebarTimer.Tick += new System.EventHandler(this.sidebarTimer_Tick);
+            // 
+            // HomeTimer
+            // 
+            this.HomeTimer.Interval = 10;
+            this.HomeTimer.Tick += new System.EventHandler(this.HomeTimer_Tick);
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.panel5.Controls.Add(this.pictureBox2);
+            this.panel5.Controls.Add(this.pictureBox3);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(244, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(904, 53);
+            this.panel5.TabIndex = 5;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = global::Proyecto_Base_de_Datos.Properties.Resources.icons8_círculo_rellenado_16__2_1;
+            this.pictureBox2.Location = new System.Drawing.Point(841, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(17, 29);
+            this.pictureBox2.TabIndex = 10;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Image = global::Proyecto_Base_de_Datos.Properties.Resources.icons8_círculo_rellenado_16__3_;
+            this.pictureBox3.Location = new System.Drawing.Point(874, 12);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(17, 29);
+            this.pictureBox3.TabIndex = 8;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // guna2DragControl2
+            // 
+            this.guna2DragControl2.TargetControl = this.panel5;
+            // 
+            // panelContenedor
+            // 
+            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContenedor.Location = new System.Drawing.Point(244, 53);
+            this.panelContenedor.Name = "panelContenedor";
+            this.panelContenedor.Size = new System.Drawing.Size(904, 577);
+            this.panelContenedor.TabIndex = 6;
             // 
             // frmInicio
             // 

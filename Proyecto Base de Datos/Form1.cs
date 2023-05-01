@@ -14,6 +14,9 @@ namespace Proyecto_Base_de_Datos
 {
     public partial class frmInicio : Form
     {
+        private IconButton currentBtn;
+        private Panel leftBorderBtn;
+
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
        
         private static extern IntPtr CreateRoundRectRgn
@@ -25,12 +28,57 @@ namespace Proyecto_Base_de_Datos
             int nWidthEllipse, // height of ellipse
             int nHeightEllipse // width of ellipse
         );
-
+        private void ActivateButton(object senderBtn, Color color)
+        {
+            //Condicion diferente a nulo
+            if (senderBtn != null)
+            {
+                //Se llama primero a este método para desactivar el
+                //Boton anterior
+                DisableButton();
+                //Button
+                currentBtn = (IconButton)senderBtn;
+                //Cambiar el color de fondo del boton y el texto
+                currentBtn.BackColor = Color.FromArgb(37, 36, 81);
+                currentBtn.ForeColor = color;
+                //Se alinea el texto al centro
+                //currentBtn.TextAlign = ContentAlignment.MiddleCenter;
+                currentBtn.IconColor = color;
+                //Cambiamos la relacion de la imagen con le texto
+               // currentBtn.TextImageRelation = TextImageRelation.TextBeforeImage;
+                //Icono a la derecha
+                //currentBtn.ImageAlign = ContentAlignment.MiddleRight;
+                //borde izquierdo del boton
+               
+                //El icono de la barra de titulo cambie al icono del 
+                //boton seleccionado y el color
+                //btnHome.IconChar = currentBtn.IconChar;
+                //btnHome.IconColor = color;
+            }
+        }
+        //Desactivar el resaltado del boton
+        private void DisableButton()
+        {
+            if (currentBtn != null)
+            {
+                //Se regresa la configuración por defecto del boton
+                currentBtn.BackColor = Color.FromArgb(37, 27, 55);
+                currentBtn.ForeColor = Color.FromArgb(255, 236, 239);
+                currentBtn.TextAlign = ContentAlignment.MiddleLeft;
+                currentBtn.IconColor = Color.FromArgb(255, 236, 239);
+                currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
+                currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
+            }
+        }
         public frmInicio()
         {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+
+            leftBorderBtn = new Panel();
+            leftBorderBtn.Size = new Size(7, 85);
+
         }
 
         //Variables para las animaciones de la barra de menu
@@ -95,10 +143,20 @@ namespace Proyecto_Base_de_Datos
                 }
             }
         }
-
+        private struct RGBColors
+        {
+            public static Color color1 = Color.FromArgb(172, 126, 241);
+            public static Color color2 = Color.FromArgb(249, 118, 176);
+            public static Color color3 = Color.FromArgb(253, 138, 114);
+            public static Color color4 = Color.FromArgb(95, 77, 221);
+            public static Color color5 = Color.FromArgb(249, 88, 155);
+            //public static Color color6 = Color.FromArgb(24, 161, 251);
+        }
         private void buttonHome_Click(object sender, EventArgs e)
         {
+            ActivateButton(sender, RGBColors.color1);
             AbrirFormHija(new frmMenu());
+            
         }
 
         private void gunaLabel1_Click(object sender, EventArgs e)
@@ -149,23 +207,30 @@ namespace Proyecto_Base_de_Datos
 
         private void iconButton3_Click(object sender, EventArgs e)
         {
+            ActivateButton(sender, RGBColors.color1);
             AbrirFormHija(new frmGestiondeRecibos());
+            
+
         }
 
         private void iconButton4_Click(object sender, EventArgs e)
         {
+            ActivateButton(sender, RGBColors.color1);
             AbrirFormHija(new frmAgregarRecibo());
+            
         }
 
         private void btnSubmenu_Click(object sender, EventArgs e)
         {
+            ActivateButton(sender, RGBColors.color1);
             AbrirFormHija(new frmSubmenu());
+            
         }
 
         private void btnActivarSubmenu_Click(object sender, EventArgs e)
         {
             HomeTimer.Start();
-
+            
         }
 
         private void iconButton1_Click(object sender, EventArgs e)
@@ -173,6 +238,9 @@ namespace Proyecto_Base_de_Datos
             HomeTimer.Start();
         }
 
-       
+        private void gunaPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
