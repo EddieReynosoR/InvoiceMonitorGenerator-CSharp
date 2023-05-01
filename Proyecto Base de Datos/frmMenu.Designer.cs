@@ -28,26 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
+            this.clasePaneles1 = new Proyecto_Base_de_Datos.clasePaneles();
             this.SuspendLayout();
             // 
-            // label3
+            // clasePaneles1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(155, 117);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(132, 16);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "   Datos personales   ";
-            // 
-            // panel7
-            // 
-            this.panel7.Location = new System.Drawing.Point(107, 126);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(586, 208);
-            this.panel7.TabIndex = 2;
-            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
+            this.clasePaneles1.BackColor = System.Drawing.Color.Transparent;
+            this.clasePaneles1.BackgroundColor = System.Drawing.Color.Transparent;
+            this.clasePaneles1.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.clasePaneles1.BorderRadius = 8;
+            this.clasePaneles1.BorderSize = 1;
+            this.clasePaneles1.ForeColor = System.Drawing.Color.White;
+            this.clasePaneles1.Location = new System.Drawing.Point(99, 90);
+            this.clasePaneles1.Name = "clasePaneles1";
+            this.clasePaneles1.Size = new System.Drawing.Size(584, 189);
+            this.clasePaneles1.TabIndex = 0;
+            this.clasePaneles1.TextColor = System.Drawing.Color.White;
             // 
             // frmMenu
             // 
@@ -55,19 +51,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.panel7);
+            this.Controls.Add(this.clasePaneles1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmMenu";
             this.Text = "frmMenu";
+            this.Load += new System.EventHandler(this.frmMenu_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel panel7;
+        private clasePaneles clasePaneles1;
     }
 }
