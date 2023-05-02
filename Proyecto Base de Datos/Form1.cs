@@ -241,7 +241,6 @@ namespace Proyecto_Base_de_Datos
         {
             ActivateButton(sender, RGBColors.color1);
             AbrirFormHija(new frmSubmenu());
-            btnSoporte.Enabled = true;
         }
 
         private void btnActivarSubmenu_Click(object sender, EventArgs e)
