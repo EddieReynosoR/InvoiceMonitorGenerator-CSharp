@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+//using System.Windows.Media;
 
 namespace Proyecto_Base_de_Datos
 {
@@ -59,6 +60,16 @@ namespace Proyecto_Base_de_Datos
         //Desactivar el resaltado del boton
         private void DisableButton()
         {
+            if (btnInicio.Enabled == true)
+            {
+                btnInicio.BackColor = Color.FromArgb(35, 40, 45);
+                btnInicio.ForeColor = Color.White;
+                btnInicio.TextAlign = ContentAlignment.MiddleLeft;
+                btnInicio.IconColor = Color.Thistle;
+                // currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
+                btnInicio.ImageAlign = ContentAlignment.MiddleLeft;
+                
+            }
             if (currentBtn != null)
             {
                 //Se regresa la configuración por defecto del boton
@@ -79,6 +90,7 @@ namespace Proyecto_Base_de_Datos
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, 85);
 
+
         }
 
         //Variables para las animaciones de la barra de menu
@@ -89,6 +101,12 @@ namespace Proyecto_Base_de_Datos
         private void Form1_Load(object sender, EventArgs e)
         {
             buttonHome_Click(null, e);
+            btnInicio.BackColor = Color.FromArgb(37, 36, 81);
+            btnInicio.ForeColor = Color.White;
+            //Se alinea el texto al centro
+            //currentBtn.TextAlign = ContentAlignment.MiddleCenter;
+            btnInicio.IconColor = RGBColors.color1;
+            btnInicio.Enabled = true;
         }
 
         //Animacion de la barra de menu
@@ -154,8 +172,7 @@ namespace Proyecto_Base_de_Datos
         }
         private void buttonHome_Click(object sender, EventArgs e)
         {
-            // ActivateButton(sender, RGBColors.color1);
-            DisableButton();
+            ActivateButton(sender, RGBColors.color1);
             AbrirFormHija(new frmMenu());
         }
 
