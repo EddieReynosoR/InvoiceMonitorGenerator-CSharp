@@ -62,10 +62,10 @@ namespace Proyecto_Base_de_Datos
             if (currentBtn != null)
             {
                 //Se regresa la configuración por defecto del boton
-                currentBtn.BackColor = Color.FromArgb(37, 27, 55);
-                currentBtn.ForeColor = Color.FromArgb(255, 236, 239);
+                currentBtn.BackColor = Color.FromArgb(35, 40, 45);
+                currentBtn.ForeColor = Color.White;
                 currentBtn.TextAlign = ContentAlignment.MiddleLeft;
-                currentBtn.IconColor = Color.FromArgb(255, 236, 239);
+                currentBtn.IconColor = Color.Thistle;
                // currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
                 currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
             }
