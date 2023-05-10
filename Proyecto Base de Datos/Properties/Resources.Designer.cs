@@ -19,7 +19,7 @@ namespace Proyecto_Base_de_Datos.Properties {
     // a través de una herramienta como ResGen o Visual Studio.
     // Para agregar o quitar un miembro, edite el archivo .ResX y, a continuación, vuelva a ejecutar ResGen
     // con la opción /str o recompile su proyecto de VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -86,6 +86,16 @@ namespace Proyecto_Base_de_Datos.Properties {
         internal static System.Drawing.Bitmap _1682833666241 {
             get {
                 object obj = ResourceManager.GetObject("1682833666241", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3031293 {
+            get {
+                object obj = ResourceManager.GetObject("3031293", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -217,6 +227,40 @@ namespace Proyecto_Base_de_Datos.Properties {
             get {
                 object obj = ResourceManager.GetObject("menu", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a &lt;!DOCTYPE html&gt;
+        ///&lt;html&gt;
+        ///&lt;head&gt;
+        ///    
+        ///    &lt;title&gt;Document&lt;/title&gt;
+        ///    &lt;style&gt;
+        ///        table.border{
+        ///            border-collapse: collapse;
+        ///        }
+        ///
+        ///        table.border th{
+        ///            padding:5px;
+        ///            border:1px solid black;
+        ///        }
+        ///
+        ///        table.border td{
+        ///            padding: 5px;
+        ///            border: 1px solid black;
+        ///        }
+        ///    &lt;/style&gt;
+        ///&lt;/head&gt;
+        ///&lt;body&gt;
+        ///    &lt;table style=&quot;width:100%&quot;&gt;
+        ///        &lt;tr&gt;
+        ///            &lt;td style=&quot;width:20%&quot;&gt;&lt;/td&gt;
+        ///            &lt;td style=&quot;width:60%&quot; [resto de la cadena truncado]&quot;;.
+        /// </summary>
+        internal static string paginahtmlrecibos {
+            get {
+                return ResourceManager.GetString("paginahtmlrecibos", resourceCulture);
             }
         }
         

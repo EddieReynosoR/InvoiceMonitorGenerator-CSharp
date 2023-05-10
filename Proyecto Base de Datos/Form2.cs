@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.Data.SqlClient;
 
 namespace Proyecto_Base_de_Datos
 {
@@ -29,7 +30,7 @@ namespace Proyecto_Base_de_Datos
         {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
-            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+            Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -40,9 +41,67 @@ namespace Proyecto_Base_de_Datos
         private void iconButton1_Click(object sender, EventArgs e)
         {
             frmInicio form1 = new frmInicio();
-            this.Hide();
-            form1.Show();
+            
+            /*
+            frmInicio form1 = new frmInicio();
+            PantallaAdminJefe pAdmin = new PantallaAdminJefe();
 
+            string usuarioAdministrador = txtUsuario.Text;
+            string contraAdministrador = txtContra.Text;
+
+            SqlConnection cn = new SqlConnection(@"Data Source=LAPTOP-QS54F2AD\MSSQLSERVER01;Database=BDProyecto;Integrated Security=true;");
+
+            cn.Open();
+
+            string query = "SELECT * FROM administrador WHERE admin_user = '" + usuarioAdministrador + "' AND admin_passwrd ='" + contraAdministrador + "'";
+
+            SqlDataAdapter sda = new SqlDataAdapter(query, cn);
+            DataTable dtable = new DataTable();
+
+            sda.Fill(dtable);
+
+            SqlCommand cmd = cn.CreateCommand();
+            cmd.CommandText = query;
+
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            if (reader.Read())
+            {
+                Admin.adminID = reader["admin_id"].ToString();
+                Admin.usuarioAdmin = reader["admin_user"].ToString();
+                Admin.adminPuesto = reader["puesto_id_puesto"].ToString();
+
+                Admin.usuarioAdminNombre = reader["admin_pnombre"].ToString();
+
+                Admin.usuarioAdminInicial = reader["admin_inicial"].ToString();
+
+                Admin.usuarioAdminApellidoP = reader["admin_apellidop"].ToString();
+
+            
+                Admin.usuarioAdminApellidoM = reader["admin_apellidom"].ToString();
+            }
+
+            if(dtable.Rows.Count > 0)
+            {
+                MessageBox.Show("Datos correctos. Entrando al sistema", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Hide();
+
+                if (Admin.adminPuesto == "1")
+                    pAdmin.Show();
+                else if (Admin.adminPuesto == "2")
+                    form1.Show();
+            }
+            else
+            {
+                MessageBox.Show("Datos incorrectos.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+            cmd.Dispose();
+            reader.Close();
+            cn.Close();
+            
+            */
+            form1.Show();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)

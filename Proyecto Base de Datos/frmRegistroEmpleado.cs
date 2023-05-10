@@ -31,5 +31,10 @@ namespace Proyecto_Base_de_Datos
         {
 
         }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

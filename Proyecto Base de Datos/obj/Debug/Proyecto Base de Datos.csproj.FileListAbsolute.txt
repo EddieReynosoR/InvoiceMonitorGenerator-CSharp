@@ -77,3 +77,57 @@ C:\Users\yyyah\OneDrive\Escritorio\Proyecto-Base-de-Datos\Proyecto Base de Datos
 C:\Users\yyyah\OneDrive\Escritorio\Proyecto-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto Base de Datos.csproj.CopyComplete
 C:\Users\yyyah\OneDrive\Escritorio\Proyecto-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto Base de Datos.exe
 C:\Users\yyyah\OneDrive\Escritorio\Proyecto-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto Base de Datos.pdb
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\bin\Debug\Proyecto Base de Datos.exe.config
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\bin\Debug\Proyecto Base de Datos.exe
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\bin\Debug\Proyecto Base de Datos.pdb
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto Base de Datos.csproj.AssemblyReference.cache
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto_Base_de_Datos.frmInicio.resources
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto_Base_de_Datos.frmInicioSesion.resources
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto_Base_de_Datos.Formularios.Gestion_de_Recibos.resources
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto_Base_de_Datos.Formularios.Home.resources
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto_Base_de_Datos.frmAgregarRecibo.resources
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto_Base_de_Datos.frmGestiondeRecibos.resources
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto_Base_de_Datos.frmHistorialdeCambios.resources
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto_Base_de_Datos.frmMenu.resources
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto_Base_de_Datos.frmRegistro.resources
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto_Base_de_Datos.frmRegistroEmpleado.resources
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto_Base_de_Datos.frmRegistroUsuario.resources
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto_Base_de_Datos.frmSubmenu.resources
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto_Base_de_Datos.Properties.Resources.resources
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto Base de Datos.csproj.GenerateResource.cache
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto Base de Datos.csproj.CoreCompileInputs.cache
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto Base de Datos.csproj.CopyComplete
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto Base de Datos.exe
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto Base de Datos.pdb
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto_Base_de_Datos.PantallaAdminJefe.resources
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto_Base_de_Datos.InsertarSocio.resources
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto_Base_de_Datos.registroRecibo.resources
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto_Base_de_Datos.EditarRecibo.resources
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto_Base_de_Datos.ImprimirRecibo.resources
+C:\Users\Eddie\source\repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Eddie\source\repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\bin\Debug\itextsharp.dll
+C:\Users\Eddie\source\repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\Eddie\source\repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\bin\Debug\itextsharp.xml
+C:\Users\Eddie\source\repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\bin\Debug\closedXML.dll
+C:\Users\Eddie\source\repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\bin\Debug\ExcelNumberFormat.dll
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\bin\Debug\Irony.dll
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\bin\Debug\SixLabors.Fonts.dll
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\bin\Debug\System.Buffers.dll
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\bin\Debug\System.IO.Packaging.dll
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\bin\Debug\System.Memory.dll
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\bin\Debug\System.ValueTuple.dll
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\bin\Debug\XLParser.dll
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\bin\Debug\ClosedXML.xml
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\bin\Debug\ExcelNumberFormat.xml
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\bin\Debug\SixLabors.Fonts.xml
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\bin\Debug\System.Buffers.xml
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\bin\Debug\System.IO.Packaging.xml
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\bin\Debug\System.Memory.xml
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\bin\Debug\System.ValueTuple.xml
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto_Base_de_Datos.Correo.resources

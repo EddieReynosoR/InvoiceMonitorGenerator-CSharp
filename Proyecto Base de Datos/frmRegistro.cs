@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using FontAwesome.Sharp;
+using System.Data.SqlClient;
 
 namespace Proyecto_Base_de_Datos
 {
@@ -66,36 +67,11 @@ namespace Proyecto_Base_de_Datos
         //Desactivar el resaltado del boton
         private void DisableButton()
         {
-            if (btnUsuario.Enabled == true)
-            {
-                btnUsuario.BackColor = Color.FromArgb(35, 40, 45);
-                btnUsuario.ForeColor = Color.White;
-                btnUsuario.TextAlign = ContentAlignment.MiddleLeft;
-                btnUsuario.IconColor = Color.Thistle;
-                // currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
-                btnUsuario.ImageAlign = ContentAlignment.MiddleLeft;
-
-            }
-            if (currentBtn != null)
-            {
-                //Se regresa la configuración por defecto del boton
-                currentBtn.BackColor = Color.FromArgb(35, 40, 45);
-                currentBtn.ForeColor = Color.White;
-                currentBtn.TextAlign = ContentAlignment.MiddleLeft;
-                currentBtn.IconColor = Color.Thistle;
-                // currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
-                currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
-            }
+            
         }
         private void frmRegistro_Load(object sender, EventArgs e)
         {
-            btnUsuario_Click(null, e);
-            btnUsuario.BackColor = Color.FromArgb(37, 36, 81);
-            btnUsuario.ForeColor = Color.White;
-            //Se alinea el texto al centro
-            //currentBtn.TextAlign = ContentAlignment.MiddleCenter;
-            btnUsuario.IconColor = RGBColors.color1;
-            btnUsuario.Enabled = true;
+            RellenarComboBox();
         }
 
         private void AbrirFormHija (object formHija)
@@ -144,11 +120,88 @@ namespace Proyecto_Base_de_Datos
         private void iconButton2_Click(object sender, EventArgs e)
         {
             frmInicioSesion frmInicioSesion = new frmInicioSesion();
-            this.Hide();
+            Hide();
             frmInicioSesion.Show();
         }
 
         private void panelContenedor_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            string adminNombre = txtNombre.Text;
+            string adminInicial = txtInicial.Text;
+            string adminApellidoP = txtApellidoP.Text;
+            string adminApellidoM = txtApellidoM.Text;
+
+            string adminUsuario = txtUsuario.Text;
+            string adminContra = txtContra.Text;
+
+            int puestoNum = cmbPuesto.SelectedIndex;
+
+
+            string query = "INSERT INTO administrador(admin_user, admin_passwrd, admin_pnombre, admin_inicial, admin_apellidop, admin_apellidom, puesto_id_puesto)VALUES(@admin_user, @admin_passwrd, @admin_pnombre, @admin_inicial, @admin_apellidop, @admin_apellidom, @puesto_id_puesto)";
+
+            using (SqlConnection cn = new SqlConnection(@"Data Source=LAPTOP-QS54F2AD\MSSQLSERVER01;Database=BDProyecto;Integrated Security=true;"))
+            {
+                SqlCommand cmd = new SqlCommand(query, cn);
+
+                cmd.Parameters.AddWithValue("@admin_user", adminUsuario);
+
+                cmd.Parameters.AddWithValue("@admin_passwrd", adminContra);
+
+                cmd.Parameters.AddWithValue("@admin_pnombre", adminNombre);
+
+                cmd.Parameters.AddWithValue("@admin_inicial", adminInicial);
+
+                cmd.Parameters.AddWithValue("@admin_apellidop", adminApellidoP);
+
+                cmd.Parameters.AddWithValue("@admin_apellidom", adminApellidoM);
+
+                cmd.Parameters.AddWithValue("@puesto_id_puesto", puestoNum + 1);
+
+
+                cn.Open();
+                cmd.ExecuteNonQuery();
+            }
+
+            DialogResult result = MessageBox.Show("Administrador registrado con éxito.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            if(result == DialogResult.OK)
+            {
+                frmInicioSesion frmInicioSesion = new frmInicioSesion();
+                Hide();
+                frmInicioSesion.Show();
+            }
+
+            
+        }
+
+        public void RellenarComboBox()
+        {
+            SqlConnection cn = new SqlConnection(@"Data Source=LAPTOP-QS54F2AD\MSSQLSERVER01;Database=BDProyecto;Integrated Security=true;");
+
+            cn.Open();
+
+            string query = "SELECT puesto_nombre, id_puesto FROM puesto";
+           
+
+            SqlCommand cmd = new SqlCommand(query, cn);
+            SqlDataReader dr = cmd.ExecuteReader();
+
+            while (dr.Read())
+            {
+                cmbPuesto.Items.Add(dr["puesto_nombre"].ToString());
+                cmbPuesto.DisplayMember = dr["puesto_nombre"].ToString();
+                cmbPuesto.ValueMember = dr["id_puesto"].ToString();
+            }
+
+            cn.Close();
+        }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
         {
 
         }

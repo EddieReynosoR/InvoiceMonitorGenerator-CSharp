@@ -207,6 +207,15 @@ namespace Proyecto_Base_de_Datos
         {
             frmInicioSesion frmInicioSesion = new frmInicioSesion();
             this.Hide();
+
+            Admin.adminID = null;
+            Admin.usuarioAdmin = null;
+            Admin.adminPuesto = null;
+            Admin.usuarioAdminNombre = null;
+            Admin.usuarioAdminInicial = "";
+            Admin.usuarioAdminApellidoP = null;
+            Admin.usuarioAdminApellidoM = null;
+
             frmInicioSesion.Show();
         }
 
@@ -256,6 +265,31 @@ namespace Proyecto_Base_de_Datos
         }
 
         private void gunaPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelContenedor_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

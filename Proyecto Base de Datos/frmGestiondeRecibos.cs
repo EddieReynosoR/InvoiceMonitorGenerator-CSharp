@@ -25,7 +25,28 @@ namespace Proyecto_Base_de_Datos
 
         private void frmGestiondeRecibos_Load(object sender, EventArgs e)
         {
+            DetallesRecibo();
+            ReciboPanel();
+        }
 
+        public void DetallesRecibo()
+        {
+            Recibo recibo = new Recibo();
+
+            recibo.getList();
+        }
+
+        public void ReciboPanel()
+        {
+            foreach(Recibo cancion in Recibo.lista)
+            {
+                registroRecibo panel = new registroRecibo();
+
+                panel.DetallesRecibo(cancion);
+
+                panel.Dock = DockStyle.Top;
+                panelRecibos.Controls.Add(panel);
+            }
         }
     }
 }

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Document</title>
+    <style>
+        table.border{
+            border-collapse: collapse;
+        }
+
+        table.border th{
+            padding:5px;
+            border:1px solid black;
+        }
+
+        table.border td{
+            padding: 5px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table style="width:100%">
+        <tr>
+            <td style="width:20%"></td>
+            <td style="width:60%" align="center">
+                <table>
+                    <tr><td align="center">RECIBO</td></tr>
+                    <tr><td align="center">Registec</td></tr>
+                </table>
+            </td>
+            <td style="width:20%">
+                <table class="border" style="width:100%">
+                    <tr><td align="center">NÚMERO DE FOLIO</td></tr>
+                    <tr><td align="center">@NUMFOLIO</td></tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr><td colspan="3" height="20"></td></tr>
+
+        <tr>
+            <td colspan="2">
+                <table style="width:100%">
+                    <tr>
+                        <td colspan="1" style="width:20%">Socio:</td>
+                        <td colspan="1" style="width:80%;border-bottom:1px solid black">@SOCIO</td>
+                    </tr>
+
+                    <tr>                      
+
+                        <td colspan="1" style="width:10%">Impporte:</td>
+                        <td colspan="1" style="width: 40%; border-bottom: 1px solid black">@FECHA</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr><td colspan="3" height="20"></td></tr>
+
+        <tr>
+            <td colspan="3">
+                <table class="border" style="width:100%">
+                    <thead style="background-color:#DEDEDE">
+                        <tr>
+                            <th>Importe</th>
+                            <th>Importe LETRAS</th>
+                            <th>PERIODO</th>
+                        </tr>                     
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>@IMPORTE</td>
+                            <td>@IMPORTELETRA</td>
+                            <td>@PERIODO</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

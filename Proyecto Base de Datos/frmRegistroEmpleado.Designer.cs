@@ -84,6 +84,7 @@
             this.iconButton1.TabIndex = 13;
             this.iconButton1.Text = "Registrar";
             this.iconButton1.UseVisualStyleBackColor = false;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // gunaLabel8
             // 

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Proyecto_Base_de_Datos
 {
@@ -15,6 +16,21 @@ namespace Proyecto_Base_de_Datos
         public frmRegistroUsuario()
         {
             InitializeComponent();
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void gunaLabel16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmRegistroUsuario_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

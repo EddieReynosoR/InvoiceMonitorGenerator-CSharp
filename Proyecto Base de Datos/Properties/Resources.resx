@@ -121,17 +121,14 @@
   <data name="1682819156001" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1682819156001.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ce616dac-e228-4394-a203-81e8dc827068" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ce616dac-e228-4394-a203-81e8dc827068.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="1682833666241" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1682833666241.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ReGISTEC COMPANY" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ReGISTEC COMPANY.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-círculo-rellenado-16 (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-círculo-rellenado-16 (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="1682833666241" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1682833666241.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cirroj" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cirroj.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,6 +154,9 @@
   <data name="icons8-círculo-rellenado-16 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-círculo-rellenado-16 (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ce616dac-e228-4394-a203-81e8dc827068" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ce616dac-e228-4394-a203-81e8dc827068.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8-círculo-rellenado-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-círculo-rellenado-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -165,6 +165,9 @@
   </data>
   <data name="1313-200" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1313-200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReGISTEC COMPANY (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ReGISTEC COMPANY (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,7 +178,10 @@
   <data name="icons8-círculo-rellenado-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-círculo-rellenado-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ReGISTEC COMPANY (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ReGISTEC COMPANY (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="3031293" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3031293.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paginahtmlrecibos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paginahtmlrecibos.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
 </root>
