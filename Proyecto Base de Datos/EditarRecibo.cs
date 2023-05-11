@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using DocumentFormat.OpenXml.Wordprocessing;
 
 namespace Proyecto_Base_de_Datos
 {
@@ -17,6 +18,7 @@ namespace Proyecto_Base_de_Datos
         {
             InitializeComponent();
         }
+        SqlConnection cn = new SqlConnection(@"Data Source=LAPTOP-QS54F2AD\MSSQLSERVER01;Database=BDProyecto;Integrated Security=true;");
 
         private void btnAtras_Click(object sender, EventArgs e)
         {
@@ -29,13 +31,35 @@ namespace Proyecto_Base_de_Datos
 
             if(result == DialogResult.Yes)
             {
+                cn.Open();
+                SqlCommand elimina = new SqlCommand("DELETE from recibo WHERE num_folio=@num_folio", cn);
+                elimina.Parameters.AddWithValue("@num_folio", lblFolio.Text);
 
+                elimina.ExecuteNonQuery();
+
+                MessageBox.Show("Disco Eliminado");
+
+                cn.Close();
             }
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
+            cn.Open();
 
+            string query = "UPDATE recibo SET estatus_estatus_codigo=@estatus_estatus_codigo WHERE num_folio=@num_folio";
+
+
+            SqlCommand cmd = new SqlCommand(query, cn);
+
+            cmd.Parameters.AddWithValue("@estatus_estatus_codigo", cmbEstatus.SelectedIndex);
+            cmd.Parameters.AddWithValue("@num_folio", lblFolio.Text);
+
+            cmd.ExecuteNonQuery();
+
+            MessageBox.Show("Recibo Actualizado");
+
+            cn.Close();
         }
 
         public void DetallesRecibo()
@@ -57,7 +81,7 @@ namespace Proyecto_Base_de_Datos
         }
         public void llenarComboBox()
         {
-            SqlConnection cn = new SqlConnection(@"Data Source=LAPTOP-QS54F2AD\MSSQLSERVER01;Database=BDProyecto;Integrated Security=true;");
+            
 
             cn.Open();
 
@@ -81,6 +105,11 @@ namespace Proyecto_Base_de_Datos
         {
             llenarComboBox();
             DetallesRecibo();
+        }
+
+        private void lblFolio_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

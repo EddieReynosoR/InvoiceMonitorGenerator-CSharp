@@ -25,6 +25,7 @@ namespace Proyecto_Base_de_Datos
 
         private void btnImprimir_Click(object sender, EventArgs e)
         {
+           
 
             if(printPreviewDialog1.ShowDialog() == DialogResult.OK)
             {
@@ -143,6 +144,11 @@ namespace Proyecto_Base_de_Datos
             Correo correo = new Correo();
 
             correo.Show();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
