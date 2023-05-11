@@ -52,7 +52,7 @@ namespace Proyecto_Base_de_Datos
 
             SqlCommand cmd = new SqlCommand(query, cn);
 
-            cmd.Parameters.AddWithValue("@estatus_estatus_codigo", cmbEstatus.SelectedIndex);
+            cmd.Parameters.AddWithValue("@estatus_estatus_codigo", cmbEstatus.SelectedItem);
             cmd.Parameters.AddWithValue("@num_folio", lblFolio.Text);
 
             cmd.ExecuteNonQuery();
