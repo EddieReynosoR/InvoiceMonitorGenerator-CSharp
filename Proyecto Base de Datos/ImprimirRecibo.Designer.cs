@@ -124,7 +124,7 @@ namespace Proyecto_Base_de_Datos
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel1.Location = new System.Drawing.Point(33, 82);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(178, 32);
+            this.gunaLabel1.Size = new System.Drawing.Size(172, 31);
             this.gunaLabel1.TabIndex = 44;
             this.gunaLabel1.Text = "Imprimir recibo";
             // 
@@ -236,6 +236,7 @@ namespace Proyecto_Base_de_Datos
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(603, 339);
             this.dataGridView1.TabIndex = 50;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // numfolioDataGridViewTextBoxColumn
             // 

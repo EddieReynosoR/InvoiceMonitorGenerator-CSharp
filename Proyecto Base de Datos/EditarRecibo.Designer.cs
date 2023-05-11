@@ -209,6 +209,7 @@ namespace Proyecto_Base_de_Datos
             this.lblFolio.Size = new System.Drawing.Size(62, 20);
             this.lblFolio.TabIndex = 15;
             this.lblFolio.Text = "lblFolio";
+            this.lblFolio.Click += new System.EventHandler(this.lblFolio_Click);
             // 
             // label5
             // 
