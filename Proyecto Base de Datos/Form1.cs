@@ -250,7 +250,6 @@ namespace Proyecto_Base_de_Datos
         {
             ActivateButton(sender, RGBColors.color1);
             AbrirFormHija(new frmSubmenu());
-            
         }
 
         private void btnActivarSubmenu_Click(object sender, EventArgs e)
