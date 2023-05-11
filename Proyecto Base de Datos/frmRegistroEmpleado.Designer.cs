@@ -283,6 +283,7 @@
             this.clasePaneles1.Size = new System.Drawing.Size(880, 184);
             this.clasePaneles1.TabIndex = 9;
             this.clasePaneles1.TextColor = System.Drawing.Color.White;
+            this.clasePaneles1.Paint += new System.Windows.Forms.PaintEventHandler(this.clasePaneles1_Paint);
             // 
             // gunaLabel7
             // 
