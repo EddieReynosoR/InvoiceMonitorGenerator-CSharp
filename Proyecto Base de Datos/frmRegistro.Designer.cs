@@ -264,7 +264,7 @@
             this.txtContraC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtContraC.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraC.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtContraC.Location = new System.Drawing.Point(626, 35);
+            this.txtContraC.Location = new System.Drawing.Point(637, 35);
             this.txtContraC.Name = "txtContraC";
             this.txtContraC.Size = new System.Drawing.Size(189, 27);
             this.txtContraC.TabIndex = 9;

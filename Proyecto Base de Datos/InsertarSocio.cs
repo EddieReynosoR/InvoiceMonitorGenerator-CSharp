@@ -28,6 +28,11 @@ namespace Proyecto_Base_de_Datos
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(txtNombre.Text) || string.IsNullOrEmpty(txtInicial.Text) || string.IsNullOrEmpty(txtRFC.Text) || string.IsNullOrEmpty(txtEmail.Text) || string.IsNullOrEmpty(txtApellidoP.Text) || string.IsNullOrEmpty(txtApellidoM.Text) || string.IsNullOrEmpty(txtColonia.Text) || string.IsNullOrEmpty(txtCalle.Text) || string.IsNullOrEmpty(txtNInterior.Text) || string.IsNullOrEmpty(txtNExterior.Text) || string.IsNullOrEmpty(txtCP.Text))
+            {
+                MessageBox.Show("Debe Ingresar los datos Correspondientes", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
             string conn = @"Data Source=LAPTOP-QS54F2AD\MSSQLSERVER01;Initial Catalog=BDProyecto;Integrated Security=True";
 
             string query = "INSERT INTO socio(socio_rfc, socio_nombre, socio_inicial, socio_apellidop, socio_apellidom, socio_calle, socio_numint, socio_numext, socio_colonia, socio_cp, socio_email, socio_fnacimiento, socio_fingreso, ciudad_id_ciudad)VALUES(@socio_rfc, @socio_nombre, @socio_inicial, @socio_apellidop, @socio_apellidom, @socio_calle, @socio_numint, @socio_numext, @socio_colonia, @socio_cp, @socio_email, @socio_fnacimiento, @socio_fingreso, @ciudad_id_ciudad)";

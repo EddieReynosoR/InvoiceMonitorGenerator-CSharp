@@ -131,6 +131,10 @@ namespace Proyecto_Base_de_Datos
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(txtNombre.Text) || string.IsNullOrEmpty(txtInicial.Text) || string.IsNullOrEmpty(txtContra.Text) || string.IsNullOrEmpty(txtContraC.Text) || string.IsNullOrEmpty(txtApellidoP.Text) || string.IsNullOrEmpty(txtApellidoM.Text) || string.IsNullOrEmpty(txtUsuario.Text) || string.IsNullOrEmpty(txtContraC.Text) || cmbPuesto.SelectedIndex == 0)
+            {
+                MessageBox.Show("Debe Ingresar los datos Correspondientes", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
             string adminNombre = txtNombre.Text;
             string adminInicial = txtInicial.Text;
             string adminApellidoP = txtApellidoP.Text;
