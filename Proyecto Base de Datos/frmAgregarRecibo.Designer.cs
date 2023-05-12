@@ -36,9 +36,9 @@
             this.clasePaneles2 = new Proyecto_Base_de_Datos.clasePaneles();
             this.gunaLabel8 = new Guna.UI.WinForms.GunaLabel();
             this.cmbSocio = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.btnInsertarSocio = new FontAwesome.Sharp.IconButton();
             this.socioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bDProyectoDataSet = new Proyecto_Base_de_Datos.BDProyectoDataSet();
-            this.btnInsertarSocio = new FontAwesome.Sharp.IconButton();
             this.clasePaneles3 = new Proyecto_Base_de_Datos.clasePaneles();
             this.lblAdmin = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel19 = new Guna.UI.WinForms.GunaLabel();
@@ -52,11 +52,13 @@
             this.txtNFolio = new System.Windows.Forms.TextBox();
             this.refrescarSocios = new System.Windows.Forms.Timer(this.components);
             this.socioTableAdapter = new Proyecto_Base_de_Datos.BDProyectoDataSetTableAdapters.socioTableAdapter();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.clasePaneles2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.socioBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bDProyectoDataSet)).BeginInit();
             this.clasePaneles3.SuspendLayout();
             this.clasePaneles1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaLabel15
@@ -155,16 +157,6 @@
             this.cmbSocio.DropDown += new System.EventHandler(this.cmbSocio_DropDown);
             this.cmbSocio.SelectedIndexChanged += new System.EventHandler(this.cmbSocio_SelectedIndexChanged);
             // 
-            // socioBindingSource
-            // 
-            this.socioBindingSource.DataMember = "socio";
-            this.socioBindingSource.DataSource = this.bDProyectoDataSet;
-            // 
-            // bDProyectoDataSet
-            // 
-            this.bDProyectoDataSet.DataSetName = "BDProyectoDataSet";
-            this.bDProyectoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // btnInsertarSocio
             // 
             this.btnInsertarSocio.BackColor = System.Drawing.SystemColors.ButtonFace;
@@ -181,6 +173,16 @@
             this.btnInsertarSocio.Text = "Agregar nuevo socio";
             this.btnInsertarSocio.UseVisualStyleBackColor = false;
             this.btnInsertarSocio.Click += new System.EventHandler(this.btnInsertarSocio_Click);
+            // 
+            // socioBindingSource
+            // 
+            this.socioBindingSource.DataMember = "socio";
+            this.socioBindingSource.DataSource = this.bDProyectoDataSet;
+            // 
+            // bDProyectoDataSet
+            // 
+            this.bDProyectoDataSet.DataSetName = "BDProyectoDataSet";
+            this.bDProyectoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // clasePaneles3
             // 
@@ -248,7 +250,7 @@
             this.lblTest.ForeColor = System.Drawing.Color.Black;
             this.lblTest.Location = new System.Drawing.Point(330, 83);
             this.lblTest.Name = "lblTest";
-            this.lblTest.Size = new System.Drawing.Size(45, 19);
+            this.lblTest.Size = new System.Drawing.Size(43, 17);
             this.lblTest.TabIndex = 14;
             this.lblTest.Text = "label1";
             // 
@@ -285,6 +287,7 @@
             this.txtImporte.Name = "txtImporte";
             this.txtImporte.Size = new System.Drawing.Size(189, 27);
             this.txtImporte.TabIndex = 11;
+            this.txtImporte.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtImporte_KeyDown);
             // 
             // gunaLabel4
             // 
@@ -316,6 +319,9 @@
             this.txtNFolio.Name = "txtNFolio";
             this.txtNFolio.Size = new System.Drawing.Size(189, 27);
             this.txtNFolio.TabIndex = 0;
+            this.txtNFolio.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtNFolio_KeyDown);
+            this.txtNFolio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNFolio_KeyPress);
+            this.txtNFolio.Validating += new System.ComponentModel.CancelEventHandler(this.txtNFolio_Validating_1);
             // 
             // refrescarSocios
             // 
@@ -324,6 +330,10 @@
             // socioTableAdapter
             // 
             this.socioTableAdapter.ClearBeforeFill = true;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // frmAgregarRecibo
             // 
@@ -349,6 +359,7 @@
             this.clasePaneles3.PerformLayout();
             this.clasePaneles1.ResumeLayout(false);
             this.clasePaneles1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -379,5 +390,6 @@
         private BDProyectoDataSet bDProyectoDataSet;
         private System.Windows.Forms.BindingSource socioBindingSource;
         private BDProyectoDataSetTableAdapters.socioTableAdapter socioTableAdapter;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

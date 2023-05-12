@@ -82,7 +82,7 @@
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel1.Location = new System.Drawing.Point(27, 25);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(220, 32);
+            this.gunaLabel1.Size = new System.Drawing.Size(214, 31);
             this.gunaLabel1.TabIndex = 43;
             this.gunaLabel1.Text = "Recibos registrados";
             // 

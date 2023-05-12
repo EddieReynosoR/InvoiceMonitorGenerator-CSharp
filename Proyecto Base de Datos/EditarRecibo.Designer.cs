@@ -133,7 +133,7 @@ namespace Proyecto_Base_de_Datos
             this.btnEliminar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
             this.btnEliminar.HoverState.Parent = this.btnEliminar;
-            this.btnEliminar.Location = new System.Drawing.Point(12, 426);
+            this.btnEliminar.Location = new System.Drawing.Point(16, 426);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.ShadowDecoration.Parent = this.btnEliminar;
             this.btnEliminar.Size = new System.Drawing.Size(180, 45);

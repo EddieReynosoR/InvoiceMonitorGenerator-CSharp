@@ -72,7 +72,7 @@
             this.linkLabel1.LinkColor = System.Drawing.Color.White;
             this.linkLabel1.Location = new System.Drawing.Point(131, 533);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(76, 19);
+            this.linkLabel1.Size = new System.Drawing.Size(74, 17);
             this.linkLabel1.TabIndex = 9;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Registrarse";
@@ -112,7 +112,7 @@
             this.iconButton1.IconColor = System.Drawing.Color.Thistle;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(-6, -6);
+            this.iconButton1.Location = new System.Drawing.Point(-12, -14);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(197, 55);
             this.iconButton1.TabIndex = 7;
@@ -237,7 +237,7 @@
             this.gunaLabel4.ForeColor = System.Drawing.Color.White;
             this.gunaLabel4.Location = new System.Drawing.Point(34, 170);
             this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(309, 25);
+            this.gunaLabel4.Size = new System.Drawing.Size(298, 25);
             this.gunaLabel4.TabIndex = 11;
             this.gunaLabel4.Text = "Sistema administrativo de recibos";
             // 

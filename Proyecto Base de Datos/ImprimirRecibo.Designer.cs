@@ -145,7 +145,7 @@ namespace Proyecto_Base_de_Datos
             this.btnImprimir.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnImprimir.ForeColor = System.Drawing.Color.White;
             this.btnImprimir.HoverState.Parent = this.btnImprimir;
-            this.btnImprimir.Location = new System.Drawing.Point(39, 178);
+            this.btnImprimir.Location = new System.Drawing.Point(39, 176);
             this.btnImprimir.Name = "btnImprimir";
             this.btnImprimir.ShadowDecoration.Parent = this.btnImprimir;
             this.btnImprimir.Size = new System.Drawing.Size(180, 45);

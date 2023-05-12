@@ -21,5 +21,10 @@ namespace Proyecto_Base_de_Datos
         {
             Application.Exit();
         }
+
+        private void btnAñadirRecibo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -205,5 +205,224 @@ namespace Proyecto_Base_de_Datos
         {
 
         }
+
+        private void txtNombre_Validating(object sender, CancelEventArgs e)
+        {
+            if (txtNombre.Text.Trim() == "")
+            {
+                errorProvider1.SetError(txtNombre, "Debe Introducir el nombre");
+                txtNombre.Focus();
+            }
+            else
+            {
+                errorProvider1.Clear();
+            }
+        }
+
+        private void txtNombre_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                txtInicial.Focus();
+            }
+        }
+
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && (e.KeyChar != (char)Keys.Back) && (e.KeyChar != (char)Keys.Space) && (e.KeyChar != (char)Keys.Enter))
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se permiten letras");
+            }
+        }
+
+        private void txtInicial_Validating(object sender, CancelEventArgs e)
+        {
+            if (txtInicial.Text.Trim() == "")
+            {
+                errorProvider1.SetError(txtInicial, "Debe Introducir la inicial");
+                txtInicial.Focus();
+            }
+            else
+            {
+                errorProvider1.Clear();
+            }
+        }
+
+        private void txtInicial_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                txtApellidoP.Focus();
+            }
+        }
+
+        private void txtInicial_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && (e.KeyChar != (char)Keys.Back) && (e.KeyChar != (char)Keys.Enter))
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se permiten letras");
+            }
+        }
+
+        private void txtApellidoP_Validating(object sender, CancelEventArgs e)
+        {
+            if (txtApellidoP.Text.Trim() == "")
+            {
+                errorProvider1.SetError(txtApellidoP, "Debe Introducir el apellido paterno");
+                txtApellidoP.Focus();
+            }
+            else
+            {
+                errorProvider1.Clear();
+            }
+        }
+
+        private void txtApellidoP_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                txtApellidoM.Focus();
+            }
+        }
+
+        private void txtApellidoP_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && (e.KeyChar != (char)Keys.Back) && (e.KeyChar != (char)Keys.Enter) && (e.KeyChar != (char)Keys.Space))
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se permiten letras");
+            }
+        }
+
+        private void txtApellidoM_Validating(object sender, CancelEventArgs e)
+        {
+            if (txtApellidoM.Text.Trim() == "")
+            {
+                errorProvider1.SetError(txtApellidoM, "Debe Introducir el apellido paterno");
+                txtApellidoM.Focus();
+            }
+            else
+            {
+                errorProvider1.Clear();
+            }
+        }
+
+        private void txtApellidoM_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && (e.KeyChar != (char)Keys.Back) && (e.KeyChar != (char)Keys.Enter) && (e.KeyChar != (char)Keys.Space))
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se permiten letras");
+            }
+        }
+
+        private void txtApellidoM_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                txtUsuario.Focus();
+            }
+        }
+
+        private void txtUsuario_Validating(object sender, CancelEventArgs e)
+        {
+            if (txtUsuario.Text.Trim() == "")
+            {
+                errorProvider1.SetError(txtUsuario, "Debe Introducir el usuario");
+                txtUsuario.Focus();
+            }
+            else
+            {
+                errorProvider1.Clear();
+            }
+        }
+
+        private void txtUsuario_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                txtContra.Focus();
+            }
+        }
+
+        private void txtUsuario_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && (e.KeyChar != (char)Keys.Back) && (e.KeyChar != (char)Keys.Enter) && !char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                MessageBox.Show("Solo se aceptan letras y numeros");
+                e.Handled = true;
+
+            }
+        }
+
+        private void txtContra_Validating(object sender, CancelEventArgs e)
+        {
+            if (txtContra.Text.Trim() == "")
+            {
+                errorProvider1.SetError(txtContra, "Debe Introducir la contraseña");
+                txtContra.Focus();
+            }
+            else
+            {
+                errorProvider1.Clear();
+            }
+        }
+
+        private void txtContra_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (txtContra.Text.Length <= 8)
+                {
+                    MessageBox.Show("Se necesita minimo 8 caracteres");
+                    txtContra.Focus();
+                }
+                else
+                {
+                    txtContraC.Focus();
+                }
+                
+            }
+        }
+
+        private void txtContraC_Validating(object sender, CancelEventArgs e)
+        {
+            if (txtContraC.Text.Trim() == "")
+            {
+                errorProvider1.SetError(txtContraC, "Debe Introducir la confirmacion de contraseña");
+                txtContraC.Focus();
+            }
+            else
+            {
+                errorProvider1.Clear();
+            }
+        }
+
+        private void txtContraC_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (txtContra.Text == txtContraC.Text)
+                {
+                    cmbPuesto.Focus();
+                }
+                else
+                {
+                    MessageBox.Show("Las contraseñas no coinciden");
+                    txtContraC.Focus();
+                }
+                
+            }
+        }
+
+        private void txtInicial_TextChanged(object sender, EventArgs e)
+        {
+            if (txtInicial.Text.Length > 1)
+            {
+                MessageBox.Show("Solo se permite una letra");
+            }
+        }
     }
 }

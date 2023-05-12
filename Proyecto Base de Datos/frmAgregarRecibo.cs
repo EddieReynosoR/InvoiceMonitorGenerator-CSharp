@@ -227,5 +227,57 @@ namespace Proyecto_Base_de_Datos
 
             lblTest.Text = cmbSocio.ValueMember.ToString();
         }
+
+        private void txtNFolio_Validating(object sender, CancelEventArgs e)
+        {
+            if (txtNFolio.Text.Trim() == "")
+            {
+                errorProvider1.SetError(txtNFolio, "Debe Introducir el numero de folio");
+                txtNFolio.Focus();
+            }
+            else
+            {
+                errorProvider1.Clear();
+            }
+        }
+
+        private void txtImporte_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && (e.KeyChar != (char)Keys.Back) && (e.KeyChar != (char)Keys.Space) && (e.KeyChar != (char)Keys.Enter))
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se permiten letras");
+            }
+        }
+
+        private void txtNFolio_Validating_1(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void txtNFolio_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                txtImporte.Focus();
+            }
+        }
+
+        private void txtNFolio_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != (char)Keys.Enter))
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se puede introducir números");
+            }
+        }
+
+        private void txtImporte_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                cmbSocio.Focus();
+            }
+        }
     }
 }

@@ -38,13 +38,14 @@ namespace Proyecto_Base_de_Datos
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.gunaLabel15 = new Guna.UI.WinForms.GunaLabel();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.gunaLabel8 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.clasePaneles3 = new Proyecto_Base_de_Datos.clasePaneles();
             this.fechaIngreso = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.gunaLabel19 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel21 = new Guna.UI.WinForms.GunaLabel();
-            this.txtRFC = new System.Windows.Forms.TextBox();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.gunaLabel8 = new Guna.UI.WinForms.GunaLabel();
             this.clasePaneles2 = new Proyecto_Base_de_Datos.clasePaneles();
             this.cmbCiudad = new Guna.UI2.WinForms.Guna2ComboBox();
             this.gunaLabel9 = new Guna.UI.WinForms.GunaLabel();
@@ -58,11 +59,12 @@ namespace Proyecto_Base_de_Datos
             this.gunaLabel13 = new Guna.UI.WinForms.GunaLabel();
             this.txtColonia = new System.Windows.Forms.TextBox();
             this.gunaLabel14 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.clasePaneles1 = new Proyecto_Base_de_Datos.clasePaneles();
             this.fechaNacimiento = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.gunaLabel16 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel21 = new Guna.UI.WinForms.GunaLabel();
             this.txtInicial = new System.Windows.Forms.TextBox();
+            this.txtRFC = new System.Windows.Forms.TextBox();
             this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
@@ -72,11 +74,11 @@ namespace Proyecto_Base_de_Datos
             this.txtApellidoP = new System.Windows.Forms.TextBox();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.clasePaneles3.SuspendLayout();
             this.clasePaneles2.SuspendLayout();
             this.clasePaneles1.SuspendLayout();
@@ -167,6 +169,51 @@ namespace Proyecto_Base_de_Datos
             this.gunaLabel15.TabIndex = 29;
             this.gunaLabel15.Text = "      Empresa    ";
             // 
+            // iconButton1
+            // 
+            this.iconButton1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.iconButton1.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.UserPlus;
+            this.iconButton1.IconColor = System.Drawing.Color.MediumSlateBlue;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton1.Location = new System.Drawing.Point(664, 521);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(239, 49);
+            this.iconButton1.TabIndex = 27;
+            this.iconButton1.Text = "Registrar";
+            this.iconButton1.UseVisualStyleBackColor = false;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            // 
+            // gunaLabel8
+            // 
+            this.gunaLabel8.AutoSize = true;
+            this.gunaLabel8.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLabel8.ForeColor = System.Drawing.Color.Black;
+            this.gunaLabel8.Location = new System.Drawing.Point(103, 275);
+            this.gunaLabel8.Name = "gunaLabel8";
+            this.gunaLabel8.Size = new System.Drawing.Size(120, 20);
+            this.gunaLabel8.TabIndex = 26;
+            this.gunaLabel8.Text = "      Direccion      ";
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLabel1.Location = new System.Drawing.Point(103, 57);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(155, 20);
+            this.gunaLabel1.TabIndex = 24;
+            this.gunaLabel1.Text = "    Datos personales    ";
+            // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.TargetControl = this.panel5;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // clasePaneles3
             // 
             this.clasePaneles3.BackColor = System.Drawing.Color.Transparent;
@@ -208,53 +255,6 @@ namespace Proyecto_Base_de_Datos
             this.gunaLabel19.Size = new System.Drawing.Size(121, 20);
             this.gunaLabel19.TabIndex = 10;
             this.gunaLabel19.Text = "Fecha de ingreso";
-            // 
-            // gunaLabel21
-            // 
-            this.gunaLabel21.AutoSize = true;
-            this.gunaLabel21.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel21.ForeColor = System.Drawing.Color.Black;
-            this.gunaLabel21.Location = new System.Drawing.Point(393, 152);
-            this.gunaLabel21.Name = "gunaLabel21";
-            this.gunaLabel21.Size = new System.Drawing.Size(34, 20);
-            this.gunaLabel21.TabIndex = 6;
-            this.gunaLabel21.Text = "RFC";
-            // 
-            // txtRFC
-            // 
-            this.txtRFC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtRFC.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRFC.Location = new System.Drawing.Point(319, 122);
-            this.txtRFC.Name = "txtRFC";
-            this.txtRFC.Size = new System.Drawing.Size(189, 27);
-            this.txtRFC.TabIndex = 0;
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.iconButton1.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.UserPlus;
-            this.iconButton1.IconColor = System.Drawing.Color.MediumSlateBlue;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(664, 521);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(239, 49);
-            this.iconButton1.TabIndex = 27;
-            this.iconButton1.Text = "Registrar";
-            this.iconButton1.UseVisualStyleBackColor = false;
-            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
-            // 
-            // gunaLabel8
-            // 
-            this.gunaLabel8.AutoSize = true;
-            this.gunaLabel8.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel8.ForeColor = System.Drawing.Color.Black;
-            this.gunaLabel8.Location = new System.Drawing.Point(103, 275);
-            this.gunaLabel8.Name = "gunaLabel8";
-            this.gunaLabel8.Size = new System.Drawing.Size(120, 20);
-            this.gunaLabel8.TabIndex = 26;
-            this.gunaLabel8.Text = "      Direccion      ";
             // 
             // clasePaneles2
             // 
@@ -320,6 +320,9 @@ namespace Proyecto_Base_de_Datos
             this.txtCP.Name = "txtCP";
             this.txtCP.Size = new System.Drawing.Size(189, 27);
             this.txtCP.TabIndex = 15;
+            this.txtCP.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCP_KeyDown);
+            this.txtCP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCP_KeyPress);
+            this.txtCP.Validating += new System.ComponentModel.CancelEventHandler(this.txtCP_Validating);
             // 
             // gunaLabel10
             // 
@@ -340,6 +343,7 @@ namespace Proyecto_Base_de_Datos
             this.txtNExterior.Name = "txtNExterior";
             this.txtNExterior.Size = new System.Drawing.Size(189, 27);
             this.txtNExterior.TabIndex = 13;
+            this.txtNExterior.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtNExterior_KeyDown);
             // 
             // gunaLabel11
             // 
@@ -360,6 +364,9 @@ namespace Proyecto_Base_de_Datos
             this.txtNInterior.Name = "txtNInterior";
             this.txtNInterior.Size = new System.Drawing.Size(189, 27);
             this.txtNInterior.TabIndex = 11;
+            this.txtNInterior.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtNInterior_KeyDown);
+            this.txtNInterior.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNInterior_KeyPress);
+            this.txtNInterior.Validating += new System.ComponentModel.CancelEventHandler(this.txtNInterior_Validating);
             // 
             // gunaLabel12
             // 
@@ -380,6 +387,8 @@ namespace Proyecto_Base_de_Datos
             this.txtCalle.Name = "txtCalle";
             this.txtCalle.Size = new System.Drawing.Size(189, 27);
             this.txtCalle.TabIndex = 9;
+            this.txtCalle.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCalle_KeyDown);
+            this.txtCalle.Validating += new System.ComponentModel.CancelEventHandler(this.txtCalle_Validating);
             // 
             // gunaLabel13
             // 
@@ -400,6 +409,9 @@ namespace Proyecto_Base_de_Datos
             this.txtColonia.Name = "txtColonia";
             this.txtColonia.Size = new System.Drawing.Size(189, 27);
             this.txtColonia.TabIndex = 7;
+            this.txtColonia.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtColonia_KeyDown);
+            this.txtColonia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtColonia_KeyPress);
+            this.txtColonia.Validating += new System.ComponentModel.CancelEventHandler(this.txtColonia_Validating);
             // 
             // gunaLabel14
             // 
@@ -411,16 +423,6 @@ namespace Proyecto_Base_de_Datos
             this.gunaLabel14.Size = new System.Drawing.Size(56, 20);
             this.gunaLabel14.TabIndex = 6;
             this.gunaLabel14.Text = "Ciudad";
-            // 
-            // gunaLabel1
-            // 
-            this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel1.Location = new System.Drawing.Point(103, 57);
-            this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(155, 20);
-            this.gunaLabel1.TabIndex = 24;
-            this.gunaLabel1.Text = "    Datos personales    ";
             // 
             // clasePaneles1
             // 
@@ -464,6 +466,7 @@ namespace Proyecto_Base_de_Datos
             this.fechaNacimiento.Size = new System.Drawing.Size(216, 36);
             this.fechaNacimiento.TabIndex = 12;
             this.fechaNacimiento.Value = new System.DateTime(2023, 5, 9, 11, 3, 42, 328);
+            this.fechaNacimiento.CloseUp += new System.EventHandler(this.fechaNacimiento_CloseUp);
             // 
             // gunaLabel16
             // 
@@ -476,6 +479,17 @@ namespace Proyecto_Base_de_Datos
             this.gunaLabel16.TabIndex = 18;
             this.gunaLabel16.Text = "Inicial";
             // 
+            // gunaLabel21
+            // 
+            this.gunaLabel21.AutoSize = true;
+            this.gunaLabel21.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLabel21.ForeColor = System.Drawing.Color.Black;
+            this.gunaLabel21.Location = new System.Drawing.Point(393, 152);
+            this.gunaLabel21.Name = "gunaLabel21";
+            this.gunaLabel21.Size = new System.Drawing.Size(34, 20);
+            this.gunaLabel21.TabIndex = 6;
+            this.gunaLabel21.Text = "RFC";
+            // 
             // txtInicial
             // 
             this.txtInicial.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -484,6 +498,21 @@ namespace Proyecto_Base_de_Datos
             this.txtInicial.Name = "txtInicial";
             this.txtInicial.Size = new System.Drawing.Size(105, 27);
             this.txtInicial.TabIndex = 17;
+            this.txtInicial.TextChanged += new System.EventHandler(this.txtInicial_TextChanged);
+            this.txtInicial.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtInicial_KeyDown);
+            this.txtInicial.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInicial_KeyPress);
+            this.txtInicial.Validating += new System.ComponentModel.CancelEventHandler(this.txtInicial_Validating);
+            // 
+            // txtRFC
+            // 
+            this.txtRFC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRFC.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRFC.Location = new System.Drawing.Point(319, 122);
+            this.txtRFC.Name = "txtRFC";
+            this.txtRFC.Size = new System.Drawing.Size(189, 27);
+            this.txtRFC.TabIndex = 0;
+            this.txtRFC.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtRFC_KeyDown);
+            this.txtRFC.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtRFC_KeyPress);
             // 
             // gunaLabel7
             // 
@@ -504,6 +533,8 @@ namespace Proyecto_Base_de_Datos
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(189, 27);
             this.txtEmail.TabIndex = 15;
+            this.txtEmail.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtEmail_KeyDown);
+            this.txtEmail.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEmail_KeyPress);
             // 
             // gunaLabel5
             // 
@@ -535,6 +566,9 @@ namespace Proyecto_Base_de_Datos
             this.txtApellidoM.Name = "txtApellidoM";
             this.txtApellidoM.Size = new System.Drawing.Size(189, 27);
             this.txtApellidoM.TabIndex = 9;
+            this.txtApellidoM.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtApellidoM_KeyDown);
+            this.txtApellidoM.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtApellidoM_KeyPress);
+            this.txtApellidoM.Validating += new System.ComponentModel.CancelEventHandler(this.txtApellidoM_Validating);
             // 
             // gunaLabel3
             // 
@@ -555,6 +589,9 @@ namespace Proyecto_Base_de_Datos
             this.txtApellidoP.Name = "txtApellidoP";
             this.txtApellidoP.Size = new System.Drawing.Size(189, 27);
             this.txtApellidoP.TabIndex = 7;
+            this.txtApellidoP.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtApellidoP_KeyDown);
+            this.txtApellidoP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtApellidoP_KeyPress);
+            this.txtApellidoP.Validating += new System.ComponentModel.CancelEventHandler(this.txtApellidoP_Validating);
             // 
             // gunaLabel2
             // 
@@ -575,10 +612,9 @@ namespace Proyecto_Base_de_Datos
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(189, 27);
             this.txtNombre.TabIndex = 0;
-            // 
-            // guna2DragControl1
-            // 
-            this.guna2DragControl1.TargetControl = this.panel5;
+            this.txtNombre.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtNombre_KeyDown);
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
+            this.txtNombre.Validating += new System.ComponentModel.CancelEventHandler(this.txtNombre_Validating);
             // 
             // InsertarSocio
             // 
@@ -602,6 +638,7 @@ namespace Proyecto_Base_de_Datos
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.clasePaneles3.ResumeLayout(false);
             this.clasePaneles3.PerformLayout();
             this.clasePaneles2.ResumeLayout(false);
@@ -658,5 +695,6 @@ namespace Proyecto_Base_de_Datos
         private Guna.UI2.WinForms.Guna2ComboBox cmbCiudad;
         private Guna.UI2.WinForms.Guna2DateTimePicker fechaNacimiento;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
