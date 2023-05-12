@@ -40,9 +40,8 @@ namespace Proyecto_Base_de_Datos
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
-            frmInicio form1 = new frmInicio();
             
-            /*
+            
             frmInicio form1 = new frmInicio();
             PantallaAdminJefe pAdmin = new PantallaAdminJefe();
 
@@ -100,8 +99,8 @@ namespace Proyecto_Base_de_Datos
             reader.Close();
             cn.Close();
             
-            */
-            form1.Show();
+            
+            
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)

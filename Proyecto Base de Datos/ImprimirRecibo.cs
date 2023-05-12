@@ -96,6 +96,7 @@ namespace Proyecto_Base_de_Datos
 
                     pdfDoc.Close();
 
+
                     stream.Close();
                 }
 
@@ -111,7 +112,7 @@ namespace Proyecto_Base_de_Datos
             {
                 if(sfd.ShowDialog() == DialogResult.OK)
                 {
-                    /* try
+                    try
                     {
                         using(XLWorkbook workbook = new XLWorkbook())
                         {
@@ -124,15 +125,9 @@ namespace Proyecto_Base_de_Datos
                     catch(Exception ex)
                     {
                         MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    } */
+                    } 
 
-                    using (XLWorkbook workbook = new XLWorkbook())
-                    {
-                        workbook.Worksheets.Add(bDProyectoDataSet1.recibo.CopyToDataTable(), "Recibos");
-                        workbook.SaveAs(sfd.FileName);
-                    }
-
-                    MessageBox.Show("Se exportó correctamente a Excel", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    
                 }
             }
         }

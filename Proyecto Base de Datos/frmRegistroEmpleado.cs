@@ -36,5 +36,10 @@ namespace Proyecto_Base_de_Datos
         {
 
         }
+
+        private void clasePaneles1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
