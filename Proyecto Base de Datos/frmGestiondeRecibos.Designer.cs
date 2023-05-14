@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.txtBuscarRecibo = new Guna.UI2.WinForms.Guna2TextBox();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.panelRecibos = new Guna.UI2.WinForms.Guna2Panel();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.SuspendLayout();
             // 
             // txtBuscarRecibo
@@ -59,26 +59,6 @@
             this.txtBuscarRecibo.Size = new System.Drawing.Size(267, 44);
             this.txtBuscarRecibo.TabIndex = 42;
             // 
-            // gunaLabel1
-            // 
-            this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel1.Location = new System.Drawing.Point(27, 25);
-            this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(442, 32);
-            this.gunaLabel1.TabIndex = 43;
-            this.gunaLabel1.Text = "Recibos registrados pendientes de firma";
-            // 
-            // panelRecibos
-            // 
-            this.panelRecibos.AutoScroll = true;
-            this.panelRecibos.Location = new System.Drawing.Point(33, 79);
-            this.panelRecibos.Name = "panelRecibos";
-            this.panelRecibos.ShadowDecoration.Parent = this.panelRecibos;
-            this.panelRecibos.Size = new System.Drawing.Size(838, 431);
-            this.panelRecibos.TabIndex = 44;
-            this.panelRecibos.Paint += new System.Windows.Forms.PaintEventHandler(this.panelRecibos_Paint);
-            // 
             // iconButton2
             // 
             this.iconButton2.BackColor = System.Drawing.SystemColors.ButtonFace;
@@ -95,6 +75,25 @@
             this.iconButton2.Text = "Historial de cambios";
             this.iconButton2.UseVisualStyleBackColor = false;
             this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel1.Location = new System.Drawing.Point(27, 25);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(214, 31);
+            this.gunaLabel1.TabIndex = 43;
+            this.gunaLabel1.Text = "Recibos registrados";
+            // 
+            // panelRecibos
+            // 
+            this.panelRecibos.AutoScroll = true;
+            this.panelRecibos.Location = new System.Drawing.Point(33, 79);
+            this.panelRecibos.Name = "panelRecibos";
+            this.panelRecibos.ShadowDecoration.Parent = this.panelRecibos;
+            this.panelRecibos.Size = new System.Drawing.Size(838, 431);
+            this.panelRecibos.TabIndex = 44;
             // 
             // frmGestiondeRecibos
             // 
@@ -116,9 +115,9 @@
         }
 
         #endregion
+        private FontAwesome.Sharp.IconButton iconButton2;
         private Guna.UI2.WinForms.Guna2TextBox txtBuscarRecibo;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI2.WinForms.Guna2Panel panelRecibos;
-        private FontAwesome.Sharp.IconButton iconButton2;
     }
 }

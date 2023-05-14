@@ -46,8 +46,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnGestiondeRecibo = new FontAwesome.Sharp.IconButton();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.btnAñadirRecibo = new FontAwesome.Sharp.IconButton();
             this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
             this.HomeTimer = new System.Windows.Forms.Timer(this.components);
@@ -64,7 +62,6 @@
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel7.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -78,7 +75,6 @@
             this.sidebar.Controls.Add(this.HomeContainer);
             this.sidebar.Controls.Add(this.panel2);
             this.sidebar.Controls.Add(this.panel3);
-            this.sidebar.Controls.Add(this.panel7);
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 0);
             this.sidebar.MaximumSize = new System.Drawing.Size(244, 590);
@@ -240,7 +236,7 @@
             this.btnActivarSubmenu.IconColor = System.Drawing.Color.Thistle;
             this.btnActivarSubmenu.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnActivarSubmenu.IconSize = 20;
-            this.btnActivarSubmenu.Location = new System.Drawing.Point(191, 9);
+            this.btnActivarSubmenu.Location = new System.Drawing.Point(182, 4);
             this.btnActivarSubmenu.Name = "btnActivarSubmenu";
             this.btnActivarSubmenu.Size = new System.Drawing.Size(44, 41);
             this.btnActivarSubmenu.TabIndex = 3;
@@ -258,7 +254,7 @@
             this.btnInicio.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnInicio.IconSize = 40;
             this.btnInicio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInicio.Location = new System.Drawing.Point(-3, -13);
+            this.btnInicio.Location = new System.Drawing.Point(-3, -18);
             this.btnInicio.Name = "btnInicio";
             this.btnInicio.Size = new System.Drawing.Size(255, 85);
             this.btnInicio.TabIndex = 1;
@@ -287,52 +283,23 @@
             this.btnGestiondeRecibo.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnGestiondeRecibo.IconSize = 40;
             this.btnGestiondeRecibo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGestiondeRecibo.Location = new System.Drawing.Point(-2, -9);
+            this.btnGestiondeRecibo.Location = new System.Drawing.Point(-3, -17);
             this.btnGestiondeRecibo.Name = "btnGestiondeRecibo";
-            this.btnGestiondeRecibo.Size = new System.Drawing.Size(283, 85);
+            this.btnGestiondeRecibo.Size = new System.Drawing.Size(255, 85);
             this.btnGestiondeRecibo.TabIndex = 1;
-            this.btnGestiondeRecibo.Text = "           Gestion de recibos sin firmas";
+            this.btnGestiondeRecibo.Text = "                 Gestion de recibos";
             this.btnGestiondeRecibo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGestiondeRecibo.UseVisualStyleBackColor = false;
             this.btnGestiondeRecibo.Click += new System.EventHandler(this.iconButton3_Click);
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.iconButton1);
+            this.panel3.Controls.Add(this.btnAñadirRecibo);
             this.panel3.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel3.Location = new System.Drawing.Point(3, 259);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(268, 59);
             this.panel3.TabIndex = 3;
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.iconButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.ForeColor = System.Drawing.Color.White;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.FileCircleCheck;
-            this.iconButton1.IconColor = System.Drawing.Color.Thistle;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 40;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(-9, -18);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(283, 85);
-            this.iconButton1.TabIndex = 2;
-            this.iconButton1.Text = "           Gestion de recibos con firmas";
-            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.UseVisualStyleBackColor = false;
-            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click_1);
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.btnAñadirRecibo);
-            this.panel7.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel7.Location = new System.Drawing.Point(3, 324);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(268, 59);
-            this.panel7.TabIndex = 4;
             // 
             // btnAñadirRecibo
             // 
@@ -345,7 +312,7 @@
             this.btnAñadirRecibo.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAñadirRecibo.IconSize = 40;
             this.btnAñadirRecibo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAñadirRecibo.Location = new System.Drawing.Point(-3, 0);
+            this.btnAñadirRecibo.Location = new System.Drawing.Point(-3, -15);
             this.btnAñadirRecibo.Name = "btnAñadirRecibo";
             this.btnAñadirRecibo.Size = new System.Drawing.Size(255, 85);
             this.btnAñadirRecibo.TabIndex = 1;
@@ -435,7 +402,6 @@
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -467,11 +433,9 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl2;
         private FontAwesome.Sharp.IconButton btnAtras;
+        private System.Windows.Forms.Panel panelContenedor;
         private FontAwesome.Sharp.IconButton btnActivarSubmenu;
         private FontAwesome.Sharp.IconButton btnDesactivarSubmenu;
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panelContenedor;
     }
 }
 

@@ -16,5 +16,10 @@ namespace Proyecto_Base_de_Datos
         {
             InitializeComponent();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

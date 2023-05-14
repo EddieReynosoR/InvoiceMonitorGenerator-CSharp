@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 namespace Proyecto_Base_de_Datos
 {
     public class Recibo
-    {
+    { 
         public string numFolio { get; set; }
         public string fecha { get; set; }
         public string importe { get; set; }

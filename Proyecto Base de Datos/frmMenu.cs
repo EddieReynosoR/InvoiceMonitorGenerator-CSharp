@@ -24,6 +24,11 @@ namespace Proyecto_Base_de_Datos
 
         private void frmMenu_Load(object sender, EventArgs e)
         {
+            
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
 
         }
     }

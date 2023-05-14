@@ -7,7 +7,7 @@ namespace Proyecto_Base_de_Datos
         /// Variable del diseñador necesaria.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
-
+        
         /// <summary> 
         /// Limpiar los recursos que se estén usando.
         /// </summary>
@@ -172,7 +172,7 @@ namespace Proyecto_Base_de_Datos
             this.btnImprimir.ForeColor = System.Drawing.Color.White;
             this.btnImprimir.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnImprimir.HoverState.Parent = this.btnImprimir;
-            this.btnImprimir.Location = new System.Drawing.Point(925, 82);
+            this.btnImprimir.Location = new System.Drawing.Point(925, 86);
             this.btnImprimir.Name = "btnImprimir";
             this.btnImprimir.ShadowDecoration.Parent = this.btnImprimir;
             this.btnImprimir.Size = new System.Drawing.Size(180, 45);

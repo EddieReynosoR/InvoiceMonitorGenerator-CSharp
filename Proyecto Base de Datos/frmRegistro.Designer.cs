@@ -39,8 +39,6 @@
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.clasePaneles2 = new Proyecto_Base_de_Datos.clasePaneles();
             this.cmbPuesto = new Guna.UI2.WinForms.Guna2ComboBox();
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
@@ -50,6 +48,7 @@
             this.txtContra = new System.Windows.Forms.TextBox();
             this.gunaLabel14 = new Guna.UI.WinForms.GunaLabel();
             this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.clasePaneles1 = new Proyecto_Base_de_Datos.clasePaneles();
             this.txtInicial = new System.Windows.Forms.TextBox();
             this.gunaLabel17 = new Guna.UI.WinForms.GunaLabel();
@@ -59,6 +58,8 @@
             this.txtApellidoP = new System.Windows.Forms.TextBox();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.txtNombre = new System.Windows.Forms.TextBox();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -66,6 +67,7 @@
             this.panelContenedor.SuspendLayout();
             this.clasePaneles2.SuspendLayout();
             this.clasePaneles1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel5
@@ -194,20 +196,6 @@
             this.iconButton1.UseVisualStyleBackColor = false;
             this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
-            // gunaLabel1
-            // 
-            this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel1.Location = new System.Drawing.Point(71, 40);
-            this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(155, 20);
-            this.gunaLabel1.TabIndex = 26;
-            this.gunaLabel1.Text = "    Datos personales    ";
-            // 
-            // guna2DragControl1
-            // 
-            this.guna2DragControl1.TargetControl = this.panel5;
-            // 
             // clasePaneles2
             // 
             this.clasePaneles2.BackColor = System.Drawing.Color.Transparent;
@@ -276,10 +264,12 @@
             this.txtContraC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtContraC.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraC.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtContraC.Location = new System.Drawing.Point(626, 35);
+            this.txtContraC.Location = new System.Drawing.Point(637, 35);
             this.txtContraC.Name = "txtContraC";
             this.txtContraC.Size = new System.Drawing.Size(189, 27);
             this.txtContraC.TabIndex = 9;
+            this.txtContraC.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtContraC_KeyDown);
+            this.txtContraC.Validating += new System.ComponentModel.CancelEventHandler(this.txtContraC_Validating);
             // 
             // gunaLabel13
             // 
@@ -301,6 +291,8 @@
             this.txtContra.Name = "txtContra";
             this.txtContra.Size = new System.Drawing.Size(189, 27);
             this.txtContra.TabIndex = 7;
+            this.txtContra.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtContra_KeyDown);
+            this.txtContra.Validating += new System.ComponentModel.CancelEventHandler(this.txtContra_Validating);
             // 
             // gunaLabel14
             // 
@@ -322,6 +314,19 @@
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(189, 27);
             this.txtUsuario.TabIndex = 0;
+            this.txtUsuario.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtUsuario_KeyDown);
+            this.txtUsuario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUsuario_KeyPress);
+            this.txtUsuario.Validating += new System.ComponentModel.CancelEventHandler(this.txtUsuario_Validating);
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLabel1.Location = new System.Drawing.Point(71, 40);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(155, 20);
+            this.gunaLabel1.TabIndex = 26;
+            this.gunaLabel1.Text = "    Datos personales    ";
             // 
             // clasePaneles1
             // 
@@ -354,6 +359,10 @@
             this.txtInicial.Name = "txtInicial";
             this.txtInicial.Size = new System.Drawing.Size(189, 27);
             this.txtInicial.TabIndex = 18;
+            this.txtInicial.TextChanged += new System.EventHandler(this.txtInicial_TextChanged);
+            this.txtInicial.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtInicial_KeyDown);
+            this.txtInicial.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInicial_KeyPress);
+            this.txtInicial.Validating += new System.ComponentModel.CancelEventHandler(this.txtInicial_Validating);
             // 
             // gunaLabel17
             // 
@@ -386,6 +395,9 @@
             this.txtApellidoM.Name = "txtApellidoM";
             this.txtApellidoM.Size = new System.Drawing.Size(189, 27);
             this.txtApellidoM.TabIndex = 9;
+            this.txtApellidoM.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtApellidoM_KeyDown);
+            this.txtApellidoM.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtApellidoM_KeyPress);
+            this.txtApellidoM.Validating += new System.ComponentModel.CancelEventHandler(this.txtApellidoM_Validating);
             // 
             // gunaLabel3
             // 
@@ -407,6 +419,9 @@
             this.txtApellidoP.Name = "txtApellidoP";
             this.txtApellidoP.Size = new System.Drawing.Size(189, 27);
             this.txtApellidoP.TabIndex = 7;
+            this.txtApellidoP.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtApellidoP_KeyDown);
+            this.txtApellidoP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtApellidoP_KeyPress);
+            this.txtApellidoP.Validating += new System.ComponentModel.CancelEventHandler(this.txtApellidoP_Validating);
             // 
             // gunaLabel2
             // 
@@ -428,6 +443,17 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(189, 27);
             this.txtNombre.TabIndex = 0;
+            this.txtNombre.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtNombre_KeyDown);
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
+            this.txtNombre.Validating += new System.ComponentModel.CancelEventHandler(this.txtNombre_Validating);
+            // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.TargetControl = this.panel5;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // frmRegistro
             // 
@@ -452,6 +478,7 @@
             this.clasePaneles2.PerformLayout();
             this.clasePaneles1.ResumeLayout(false);
             this.clasePaneles1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -488,5 +515,6 @@
         private System.Windows.Forms.TextBox txtApellidoP;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
