@@ -43,7 +43,6 @@ namespace Proyecto_Base_de_Datos
             
             
             frmInicio form1 = new frmInicio();
-            PantallaAdminJefe pAdmin = new PantallaAdminJefe();
 
             string usuarioAdministrador = txtUsuario.Text;
             string contraAdministrador = txtContra.Text;
@@ -85,10 +84,8 @@ namespace Proyecto_Base_de_Datos
                 MessageBox.Show("Datos correctos. Entrando al sistema", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Hide();
 
-                if (Admin.adminPuesto == "1")
-                    pAdmin.Show();
-                else if (Admin.adminPuesto == "2")
-                    form1.Show();
+                
+                form1.Show();
             }
             else
             {

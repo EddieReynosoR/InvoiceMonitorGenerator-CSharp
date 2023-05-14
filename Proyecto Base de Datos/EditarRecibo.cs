@@ -37,7 +37,12 @@ namespace Proyecto_Base_de_Datos
 
                 elimina.ExecuteNonQuery();
 
-                MessageBox.Show("Disco Eliminado");
+                SqlCommand elimina2 = new SqlCommand("DELETE FROM firma WHERE recibo_num_folio=@num_folio", cn);
+                elimina2.Parameters.AddWithValue("@num_folio", lblFolio.Text);
+
+                elimina2.ExecuteNonQuery();
+
+                MessageBox.Show("Recibo eliminado.");
 
                 cn.Close();
             }
@@ -52,7 +57,7 @@ namespace Proyecto_Base_de_Datos
 
             SqlCommand cmd = new SqlCommand(query, cn);
 
-            cmd.Parameters.AddWithValue("@estatus_estatus_codigo", cmbEstatus.SelectedIndex);
+            cmd.Parameters.AddWithValue("@estatus_estatus_codigo", cmbEstatus.SelectedItem);
             cmd.Parameters.AddWithValue("@num_folio", lblFolio.Text);
 
             cmd.ExecuteNonQuery();

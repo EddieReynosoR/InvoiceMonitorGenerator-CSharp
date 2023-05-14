@@ -184,6 +184,12 @@
     <Compile Include="frmGestiondeRecibos.Designer.cs">
       <DependentUpon>frmGestiondeRecibos.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmGestionRecibosAprob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGestionRecibosAprob.Designer.cs">
+      <DependentUpon>frmGestionRecibosAprob.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmHistorialdeCambios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -232,15 +238,21 @@
     <Compile Include="InsertarSocio.Designer.cs">
       <DependentUpon>InsertarSocio.cs</DependentUpon>
     </Compile>
-    <Compile Include="PantallaAdminJefe.cs">
+    <Compile Include="MostrarRecibosPendientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PantallaAdminJefe.Designer.cs">
-      <DependentUpon>PantallaAdminJefe.cs</DependentUpon>
+    <Compile Include="MostrarRecibosPendientes.Designer.cs">
+      <DependentUpon>MostrarRecibosPendientes.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Recibo.cs" />
+    <Compile Include="ReciboFirmas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReciboFirmas.Designer.cs">
+      <DependentUpon>ReciboFirmas.cs</DependentUpon>
+    </Compile>
     <Compile Include="registroRecibo.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -271,6 +283,9 @@
     <EmbeddedResource Include="frmGestiondeRecibos.resx">
       <DependentUpon>frmGestiondeRecibos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmGestionRecibosAprob.resx">
+      <DependentUpon>frmGestionRecibosAprob.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmHistorialdeCambios.resx">
       <DependentUpon>frmHistorialdeCambios.cs</DependentUpon>
     </EmbeddedResource>
@@ -295,8 +310,8 @@
     <EmbeddedResource Include="InsertarSocio.resx">
       <DependentUpon>InsertarSocio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PantallaAdminJefe.resx">
-      <DependentUpon>PantallaAdminJefe.cs</DependentUpon>
+    <EmbeddedResource Include="MostrarRecibosPendientes.resx">
+      <DependentUpon>MostrarRecibosPendientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -308,6 +323,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ReciboFirmas.resx">
+      <DependentUpon>ReciboFirmas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="registroRecibo.resx">
       <DependentUpon>registroRecibo.cs</DependentUpon>
     </EmbeddedResource>

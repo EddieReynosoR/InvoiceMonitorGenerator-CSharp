@@ -10,20 +10,19 @@ using System.Windows.Forms;
 
 namespace Proyecto_Base_de_Datos
 {
-    public partial class frmGestiondeRecibos : Form
+    public partial class MostrarRecibosPendientes : Form
     {
-        public frmGestiondeRecibos()
+        public MostrarRecibosPendientes()
         {
             InitializeComponent();
         }
 
-        private void iconButton2_Click(object sender, EventArgs e)
+        private void panelRecibos_Paint(object sender, PaintEventArgs e)
         {
-            frmHistorialdeCambios frmHistorialdeCambios = new frmHistorialdeCambios();  
-            frmHistorialdeCambios.Show();
+
         }
 
-        private void frmGestiondeRecibos_Load(object sender, EventArgs e)
+        private void MostrarRecibosPendientes_Load(object sender, EventArgs e)
         {
             DetallesRecibo();
             ReciboPanel();
@@ -38,7 +37,7 @@ namespace Proyecto_Base_de_Datos
 
         public void ReciboPanel()
         {
-            foreach(Recibo cancion in Recibo.lista)
+            foreach (Recibo cancion in Recibo.lista)
             {
                 ReciboFirmas panel = new ReciboFirmas();
 
@@ -47,11 +46,6 @@ namespace Proyecto_Base_de_Datos
                 panel.Dock = DockStyle.Top;
                 panelRecibos.Controls.Add(panel);
             }
-        }
-
-        private void panelRecibos_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

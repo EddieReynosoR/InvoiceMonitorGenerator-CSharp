@@ -99,7 +99,6 @@ C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj
 C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto Base de Datos.csproj.CopyComplete
 C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto Base de Datos.exe
 C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto Base de Datos.pdb
-C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto_Base_de_Datos.PantallaAdminJefe.resources
 C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto_Base_de_Datos.InsertarSocio.resources
 C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto_Base_de_Datos.registroRecibo.resources
 C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto_Base_de_Datos.EditarRecibo.resources
@@ -131,3 +130,6 @@ C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\bin
 C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\bin\Debug\System.ValueTuple.xml
 C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto_Base_de_Datos.Correo.resources
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto_Base_de_Datos.frmGestionRecibosAprob.resources
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto_Base_de_Datos.ReciboFirmas.resources
+C:\Users\Eddie\Source\Repos\Proyecto-De-Base-de-Datos\Proyecto Base de Datos\obj\Debug\Proyecto_Base_de_Datos.MostrarRecibosPendientes.resources

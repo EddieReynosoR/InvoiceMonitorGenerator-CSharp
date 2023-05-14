@@ -45,20 +45,15 @@ namespace Proyecto_Base_de_Datos
             this.btnCorreo = new Guna.UI2.WinForms.Guna2Button();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.numfolioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.importeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.importeletraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.periodoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sociosociorfcDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.estatusestatuscodigoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.reciboBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bDProyectoDataSet1 = new Proyecto_Base_de_Datos.BDProyectoDataSet1();
             this.reciboTableAdapter = new Proyecto_Base_de_Datos.BDProyectoDataSet1TableAdapters.reciboTableAdapter();
+            this.lblImporte = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
+            this.lblNumeroFolio = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reciboBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bDProyectoDataSet1)).BeginInit();
             this.SuspendLayout();
@@ -111,7 +106,7 @@ namespace Proyecto_Base_de_Datos
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(975, 53);
+            this.panel5.Size = new System.Drawing.Size(708, 53);
             this.panel5.TabIndex = 8;
             // 
             // guna2DragControl1
@@ -124,7 +119,7 @@ namespace Proyecto_Base_de_Datos
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel1.Location = new System.Drawing.Point(33, 82);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(172, 31);
+            this.gunaLabel1.Size = new System.Drawing.Size(178, 32);
             this.gunaLabel1.TabIndex = 44;
             this.gunaLabel1.Text = "Imprimir recibo";
             // 
@@ -216,84 +211,6 @@ namespace Proyecto_Base_de_Datos
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.numfolioDataGridViewTextBoxColumn,
-            this.fechaDataGridViewTextBoxColumn,
-            this.importeDataGridViewTextBoxColumn,
-            this.importeletraDataGridViewTextBoxColumn,
-            this.periodoDataGridViewTextBoxColumn,
-            this.sociosociorfcDataGridViewTextBoxColumn,
-            this.estatusestatuscodigoDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.reciboBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(325, 136);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(603, 339);
-            this.dataGridView1.TabIndex = 50;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // numfolioDataGridViewTextBoxColumn
-            // 
-            this.numfolioDataGridViewTextBoxColumn.DataPropertyName = "num_folio";
-            this.numfolioDataGridViewTextBoxColumn.FillWeight = 159.0909F;
-            this.numfolioDataGridViewTextBoxColumn.HeaderText = "num_folio";
-            this.numfolioDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.numfolioDataGridViewTextBoxColumn.Name = "numfolioDataGridViewTextBoxColumn";
-            // 
-            // fechaDataGridViewTextBoxColumn
-            // 
-            this.fechaDataGridViewTextBoxColumn.DataPropertyName = "fecha";
-            this.fechaDataGridViewTextBoxColumn.FillWeight = 130.8078F;
-            this.fechaDataGridViewTextBoxColumn.HeaderText = "fecha";
-            this.fechaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.fechaDataGridViewTextBoxColumn.Name = "fechaDataGridViewTextBoxColumn";
-            // 
-            // importeDataGridViewTextBoxColumn
-            // 
-            this.importeDataGridViewTextBoxColumn.DataPropertyName = "importe";
-            this.importeDataGridViewTextBoxColumn.FillWeight = 108.9527F;
-            this.importeDataGridViewTextBoxColumn.HeaderText = "importe";
-            this.importeDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.importeDataGridViewTextBoxColumn.Name = "importeDataGridViewTextBoxColumn";
-            // 
-            // importeletraDataGridViewTextBoxColumn
-            // 
-            this.importeletraDataGridViewTextBoxColumn.DataPropertyName = "importe_letra";
-            this.importeletraDataGridViewTextBoxColumn.FillWeight = 92.0646F;
-            this.importeletraDataGridViewTextBoxColumn.HeaderText = "importe_letra";
-            this.importeletraDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.importeletraDataGridViewTextBoxColumn.Name = "importeletraDataGridViewTextBoxColumn";
-            // 
-            // periodoDataGridViewTextBoxColumn
-            // 
-            this.periodoDataGridViewTextBoxColumn.DataPropertyName = "periodo";
-            this.periodoDataGridViewTextBoxColumn.FillWeight = 79.01473F;
-            this.periodoDataGridViewTextBoxColumn.HeaderText = "periodo";
-            this.periodoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.periodoDataGridViewTextBoxColumn.Name = "periodoDataGridViewTextBoxColumn";
-            // 
-            // sociosociorfcDataGridViewTextBoxColumn
-            // 
-            this.sociosociorfcDataGridViewTextBoxColumn.DataPropertyName = "socio_socio_rfc";
-            this.sociosociorfcDataGridViewTextBoxColumn.FillWeight = 68.93075F;
-            this.sociosociorfcDataGridViewTextBoxColumn.HeaderText = "socio_socio_rfc";
-            this.sociosociorfcDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.sociosociorfcDataGridViewTextBoxColumn.Name = "sociosociorfcDataGridViewTextBoxColumn";
-            // 
-            // estatusestatuscodigoDataGridViewTextBoxColumn
-            // 
-            this.estatusestatuscodigoDataGridViewTextBoxColumn.DataPropertyName = "estatus_estatus_codigo";
-            this.estatusestatuscodigoDataGridViewTextBoxColumn.FillWeight = 61.13857F;
-            this.estatusestatuscodigoDataGridViewTextBoxColumn.HeaderText = "estatus_estatus_codigo";
-            this.estatusestatuscodigoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.estatusestatuscodigoDataGridViewTextBoxColumn.Name = "estatusestatuscodigoDataGridViewTextBoxColumn";
-            // 
             // reciboBindingSource
             // 
             this.reciboBindingSource.DataMember = "recibo";
@@ -308,12 +225,56 @@ namespace Proyecto_Base_de_Datos
             // 
             this.reciboTableAdapter.ClearBeforeFill = true;
             // 
+            // lblImporte
+            // 
+            this.lblImporte.AutoSize = true;
+            this.lblImporte.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblImporte.Location = new System.Drawing.Point(411, 191);
+            this.lblImporte.Name = "lblImporte";
+            this.lblImporte.Size = new System.Drawing.Size(63, 20);
+            this.lblImporte.TabIndex = 53;
+            this.lblImporte.Text = "Importe";
+            // 
+            // gunaLabel3
+            // 
+            this.gunaLabel3.AutoSize = true;
+            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLabel3.Location = new System.Drawing.Point(300, 191);
+            this.gunaLabel3.Name = "gunaLabel3";
+            this.gunaLabel3.Size = new System.Drawing.Size(65, 20);
+            this.gunaLabel3.TabIndex = 52;
+            this.gunaLabel3.Text = "Importe:";
+            // 
+            // lblNumeroFolio
+            // 
+            this.lblNumeroFolio.AutoSize = true;
+            this.lblNumeroFolio.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumeroFolio.Location = new System.Drawing.Point(446, 166);
+            this.lblNumeroFolio.Name = "lblNumeroFolio";
+            this.lblNumeroFolio.Size = new System.Drawing.Size(55, 20);
+            this.lblNumeroFolio.TabIndex = 51;
+            this.lblNumeroFolio.Text = "NFolio";
+            this.lblNumeroFolio.Click += new System.EventHandler(this.lblNumeroFolio_Click);
+            // 
+            // gunaLabel4
+            // 
+            this.gunaLabel4.AutoSize = true;
+            this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLabel4.Location = new System.Drawing.Point(283, 166);
+            this.gunaLabel4.Name = "gunaLabel4";
+            this.gunaLabel4.Size = new System.Drawing.Size(122, 20);
+            this.gunaLabel4.TabIndex = 50;
+            this.gunaLabel4.Text = "Número de folio:";
+            // 
             // ImprimirRecibo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(975, 527);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(708, 479);
+            this.Controls.Add(this.lblImporte);
+            this.Controls.Add(this.gunaLabel3);
+            this.Controls.Add(this.lblNumeroFolio);
+            this.Controls.Add(this.gunaLabel4);
             this.Controls.Add(this.btnCorreo);
             this.Controls.Add(this.btnExcel);
             this.Controls.Add(this.btnPDF);
@@ -328,7 +289,6 @@ namespace Proyecto_Base_de_Datos
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.reciboBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bDProyectoDataSet1)).EndInit();
             this.ResumeLayout(false);
@@ -352,16 +312,12 @@ namespace Proyecto_Base_de_Datos
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private BDProyectoDataSet1 bDProyectoDataSet1;
         private System.Windows.Forms.BindingSource reciboBindingSource;
         private BDProyectoDataSet1TableAdapters.reciboTableAdapter reciboTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn numfolioDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fechaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn importeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn importeletraDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn periodoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sociosociorfcDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn estatusestatuscodigoDataGridViewTextBoxColumn;
+        private Guna.UI.WinForms.GunaLabel lblImporte;
+        private Guna.UI.WinForms.GunaLabel gunaLabel3;
+        private Guna.UI.WinForms.GunaLabel lblNumeroFolio;
+        private Guna.UI.WinForms.GunaLabel gunaLabel4;
     }
 }

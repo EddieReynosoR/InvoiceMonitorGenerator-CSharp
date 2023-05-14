@@ -107,6 +107,17 @@ namespace Proyecto_Base_de_Datos
             //currentBtn.TextAlign = ContentAlignment.MiddleCenter;
             btnInicio.IconColor = RGBColors.color1;
             btnInicio.Enabled = true;
+
+
+            if(Admin.adminPuesto == "1")
+            {
+                panel3.Visible = false;
+                panel7.Visible = false;
+            }
+            else
+            {
+                panel2.Visible = false;
+            }
         }
 
         //Animacion de la barra de menu
@@ -291,6 +302,12 @@ namespace Proyecto_Base_de_Datos
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void iconButton1_Click_1(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color1);
+            AbrirFormHija(new frmGestionRecibosAprob());
         }
     }
 }

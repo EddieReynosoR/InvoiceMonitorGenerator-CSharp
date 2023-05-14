@@ -13,6 +13,7 @@ using iTextSharp.text.pdf;
 using iTextSharp.tool.xml;
 using System.IO;
 using ClosedXML.Excel;
+using System.Data.SqlClient;
 
 namespace Proyecto_Base_de_Datos
 {
@@ -39,11 +40,73 @@ namespace Proyecto_Base_de_Datos
             recibo.SeleccionarRecibo(registroRecibo.id);
 
             e.Graphics.DrawString(recibo.numFolio, new System.Drawing.Font("Arial", 16, FontStyle.Bold), Brushes.Black, 150, 125);
+            e.Graphics.DrawString("----------------------", new System.Drawing.Font("Arial", 16, FontStyle.Bold), Brushes.Black, 150, 125);
+
+            e.Graphics.DrawString(recibo.periodo, new System.Drawing.Font("Arial", 16, FontStyle.Bold), Brushes.Black, 150, 125);
         }
 
         private void btnAtras_Click(object sender, EventArgs e)
         {
             Close();
+        }
+        public string ObtenerAdminJefe(string id)
+        {
+            string admin = "";
+            SqlConnection conn = new SqlConnection(@"Data Source=LAPTOP-QS54F2AD\MSSQLSERVER01;Database=BDProyecto;Integrated Security=true; MultipleActiveResultSets=True;");
+
+            conn.Open();
+
+            SqlCommand cmd = conn.CreateCommand();
+
+            string sql = "SELECT administrador.admin_pnombre + ' ' + admin_inicial+ ' ' +  admin_apellidop + ' ' +  admin_apellidom  AS 'nombre_admin', firma_fecha,puesto.puesto_nombre FROM firma INNER JOIN administrador on firma.administrador_admin_id = administrador.admin_id LEFT JOIN puesto on administrador.puesto_id_puesto = puesto.id_puesto LEFT JOIN recibo on firma.recibo_num_folio = recibo.num_folio WHERE administrador.puesto_id_puesto = '1' AND recibo.num_folio = '" + id + "'; ";
+            cmd.CommandText = sql;
+
+
+            SqlDataReader reader = cmd.ExecuteReader();
+
+
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    admin = reader["nombre_admin"].ToString() + " " + reader["firma_fecha"].ToString() + " " + reader["puesto_nombre"].ToString();
+
+                }
+                conn.Close();
+                conn.Dispose();
+            }
+
+            return admin;
+        }
+
+        public string ObtenerAdminAsistente(string id)
+        {
+            string admin = "";
+            SqlConnection conn = new SqlConnection(@"Data Source=LAPTOP-QS54F2AD\MSSQLSERVER01;Database=BDProyecto;Integrated Security=true; MultipleActiveResultSets=True;");
+
+            conn.Open();
+
+            SqlCommand cmd = conn.CreateCommand();
+
+            string sql = "SELECT administrador.admin_pnombre + ' ' + admin_inicial+ ' ' +  admin_apellidop + ' ' +  admin_apellidom  AS 'nombre_admin', firma_fecha,puesto.puesto_nombre FROM firma INNER JOIN administrador on firma.administrador_admin_id = administrador.admin_id LEFT JOIN puesto on administrador.puesto_id_puesto = puesto.id_puesto LEFT JOIN recibo on firma.recibo_num_folio = recibo.num_folio WHERE administrador.puesto_id_puesto = '2' AND recibo.num_folio = '" + id + "'; ";
+            cmd.CommandText = sql;
+
+
+            SqlDataReader reader = cmd.ExecuteReader();
+
+
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    admin = reader["nombre_admin"].ToString() + " " + reader["firma_fecha"].ToString() + " " + reader["puesto_nombre"].ToString();
+
+                }
+                conn.Close();
+                conn.Dispose();
+            }
+
+            return admin;
         }
 
         private void btnPDF_Click(object sender, EventArgs e)
@@ -67,6 +130,10 @@ namespace Proyecto_Base_de_Datos
             paginahtml_texto = paginahtml_texto.Replace("@IMPORTELETRA", recibo.importeLetra);
 
             paginahtml_texto = paginahtml_texto.Replace("@PERIODO", recibo.periodo);
+
+            paginahtml_texto = paginahtml_texto.Replace("@ADMINASISTENTE", ObtenerAdminAsistente(recibo.numFolio));
+
+            paginahtml_texto = paginahtml_texto.Replace("@ADMINJEFE", ObtenerAdminJefe(recibo.numFolio));
 
             if (guardar.ShowDialog() == DialogResult.OK)
             {
@@ -134,8 +201,12 @@ namespace Proyecto_Base_de_Datos
 
         private void ImprimirRecibo_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'bDProyectoDataSet1.recibo' Puede moverla o quitarla según sea necesario.
-            this.reciboTableAdapter.Fill(this.bDProyectoDataSet1.recibo);
+            
+            Recibo recibo = new Recibo();
+            recibo.SeleccionarRecibo(registroRecibo.id);
+
+            lblNumeroFolio.Text = recibo.numFolio;
+            lblImporte.Text = recibo.importe;
 
         }
 
@@ -147,6 +218,11 @@ namespace Proyecto_Base_de_Datos
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void lblNumeroFolio_Click(object sender, EventArgs e)
         {
 
         }
